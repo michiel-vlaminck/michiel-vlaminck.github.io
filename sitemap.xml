@@ -3,15 +3,61 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://michiel-vlaminck.github.io/categories/</loc>
+    <loc>https://michiel-vlaminck.github.io/contact/</loc>
+  </url>
+  
+  <url>
+    <loc>https://michiel-vlaminck.github.io/projects/comp-4-drones/</loc>
+    <lastmod>2020-07-11T12:27:55+02:00</lastmod>
   </url>
   
   <url>
     <loc>https://michiel-vlaminck.github.io/</loc>
+    <lastmod>2020-07-11T12:27:55+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://michiel-vlaminck.github.io/projects/</loc>
+    <lastmod>2020-07-11T12:27:55+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://michiel-vlaminck.github.io/projects/aria/</loc>
+    <lastmod>2020-07-11T12:27:39+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://michiel-vlaminck.github.io/projects/gipa/</loc>
+    <lastmod>2020-07-11T12:27:34+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://michiel-vlaminck.github.io/projects/analyst-pv/</loc>
+    <lastmod>2019-10-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://michiel-vlaminck.github.io/activities/</loc>
+  </url>
+  
+  <url>
+    <loc>https://michiel-vlaminck.github.io/categories/</loc>
+  </url>
+  
+  <url>
+    <loc>https://michiel-vlaminck.github.io/posts/</loc>
+  </url>
+  
+  <url>
+    <loc>https://michiel-vlaminck.github.io/publications/</loc>
   </url>
   
   <url>
     <loc>https://michiel-vlaminck.github.io/tags/</loc>
+  </url>
+  
+  <url>
+    <loc>https://michiel-vlaminck.github.io/about/</loc>
   </url>
   
 </urlset>
