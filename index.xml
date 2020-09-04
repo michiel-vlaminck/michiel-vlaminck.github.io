@@ -6,38 +6,10 @@
     <description>Recent content on Michiel Vlaminck</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 11 Jul 2020 12:27:55 +0200</lastBuildDate>
+    <lastBuildDate>Tue, 01 Oct 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://michiel-vlaminck.github.io/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>COMP4DRONES</title>
-      <link>https://michiel-vlaminck.github.io/projects/comp-4-drones/</link>
-      <pubDate>Sat, 11 Jul 2020 12:27:55 +0200</pubDate>
-      
-      <guid>https://michiel-vlaminck.github.io/projects/comp-4-drones/</guid>
-      <description>COMP4DRONES is a European project that aims to provide a framework of key technologies to facilitate safe and autonomous drones. It will ease the development of new applications and functionalities on the field of transport, construction, surveillance and inspection, logistics and agriculture.
-My work in the project focuses on the use case of inspection of wind turbines. More specifically I aim at detecting degradation in the form of corrosion. To that end, I am using data acquired with imec&amp;rsquo;s dual hyperspectral camera system.</description>
-    </item>
-    
-    <item>
-      <title>ARIA</title>
-      <link>https://michiel-vlaminck.github.io/projects/aria/</link>
-      <pubDate>Sat, 11 Jul 2020 12:27:39 +0200</pubDate>
-      
-      <guid>https://michiel-vlaminck.github.io/projects/aria/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>GIPA</title>
-      <link>https://michiel-vlaminck.github.io/projects/gipa/</link>
-      <pubDate>Sat, 11 Jul 2020 12:27:34 +0200</pubDate>
-      
-      <guid>https://michiel-vlaminck.github.io/projects/gipa/</guid>
-      <description>The goal of this project was to develop a generic interoperability framework for augmented reality applications. The platform is able to host a variety of applications in the domains of remote collaboration, engineering, smart cities, gaming, entertainment, etc. My task in the project was focused on the modelling and analysis of the environment by means of 3D reconstruction and the detection of 3D geometric primitives.</description>
-    </item>
     
     <item>
       <title>ANALYST PV</title>
@@ -47,6 +19,34 @@ My work in the project focuses on the use case of inspection of wind turbines. M
       <guid>https://michiel-vlaminck.github.io/projects/analyst-pv/</guid>
       <description>The goal of this project is to provide tools for fault localization, power loss quantification and improved diagnostics of PV power plants. A more efficient detection, diagnosis and localization of the fault will lead to a reduced time during which the fault can impact production.
 My work in the project consists of developing image processing techniques to detect and classify anomalies that occur on solar panels including bypass substrings, junction box issues, diode issues, string issues and potential induced defects (PID).</description>
+    </item>
+    
+    <item>
+      <title>COMP4DRONES</title>
+      <link>https://michiel-vlaminck.github.io/projects/comp-4-drones/</link>
+      <pubDate>Mon, 01 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://michiel-vlaminck.github.io/projects/comp-4-drones/</guid>
+      <description>COMP4DRONES is a European project that aims to provide a framework of key technologies to facilitate safe and autonomous drones (https://www.comp4drones.eu/). It will ease the development of new applications and functionalities on the field of transport, construction, surveillance and inspection, logistics and agriculture.
+My work in the project focuses on the use case of inspection of wind turbines. More specifically I aim at detecting degradation in the form of corrosion. To that end, I am using data acquired with imec&amp;rsquo;s dual hyperspectral camera system.</description>
+    </item>
+    
+    <item>
+      <title>ARIA</title>
+      <link>https://michiel-vlaminck.github.io/projects/aria/</link>
+      <pubDate>Fri, 01 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://michiel-vlaminck.github.io/projects/aria/</guid>
+      <description>The ARIA project aims to restore and enhance the competitiveness of industries in Flanders by optimizing communication, support and training initiatives through the use of Augmented Reality (AR). AR superimposes an instantly adapting projection of digital information as an additional layer on top of the real world. The implementation of wearable AR — to convey instructions, guide employees and teach skills — will reduce costs in terms of time and resources, while allowing lower-trained employees to perform more complex tasks.</description>
+    </item>
+    
+    <item>
+      <title>GIPA</title>
+      <link>https://michiel-vlaminck.github.io/projects/gipa/</link>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://michiel-vlaminck.github.io/projects/gipa/</guid>
+      <description>The goal of this project is to develop a generic interoperability framework for augmented reality applications. The platform is able to host a variety of applications in the domains of remote collaboration, engineering, smart cities, gaming, entertainment, etc. My task in the project was focused on the modelling and analysis of the environment by means of 3D reconstruction and the detection of 3D geometric primitives.</description>
     </item>
     
   </channel>
