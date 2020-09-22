@@ -17,7 +17,16 @@
       <pubDate>Fri, 04 Sep 2020 22:07:06 +0200</pubDate>
       
       <guid>https://michiel-vlaminck.github.io/posts/ai4growth/</guid>
-      <description>On September I will give a yalk at the AI4Growth Industrial IA Day - as part of the ECML PKDD conference (https://ecmlpkdd2020.net/) - on the work I have been doing on aerial inspection of PV power plants.</description>
+      <description>On September 17th I will give a yalk at the AI4Growth Industrial IA Day - as part of the ECML PKDD conference (https://ecmlpkdd2020.net/) - on the work I have been doing on aerial inspection of PV power plants.</description>
+    </item>
+    
+    <item>
+      <title>Succesfuly defended my PhD</title>
+      <link>https://michiel-vlaminck.github.io/posts/phd-defense/</link>
+      <pubDate>Wed, 25 Mar 2020 18:00:00 +0200</pubDate>
+      
+      <guid>https://michiel-vlaminck.github.io/posts/phd-defense/</guid>
+      <description></description>
     </item>
     
     <item>
@@ -26,7 +35,7 @@
       <pubDate>Tue, 01 Oct 2019 00:00:00 +0000</pubDate>
       
       <guid>https://michiel-vlaminck.github.io/projects/analyst-pv/</guid>
-      <description>The goal of this project is to provide tools for fault localization, power loss quantification and improved diagnostics of PV power plants. A more efficient detection, diagnosis and localization of the fault will lead to a reduced time during which the fault can impact production.
+      <description>The goal of this project is to provide tools for fault localization, power loss quantification and improved diagnostics of PV power plants. A more efficient detection, diagnosis and localization of the fault will lead to a reduced time during which the fault can impact production. More information can be found on the project website.
 My work in the project consists of developing image processing techniques to detect and classify anomalies that occur on solar panels including bypass substrings, junction box issues, diode issues, string issues and potential induced defects (PID).</description>
     </item>
     
