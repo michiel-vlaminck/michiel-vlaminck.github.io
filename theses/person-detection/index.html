@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Language" content="en">
+
+    <meta name="author" content="Michiel Vlaminck">
+    <meta name="description" content="Detecting persons possibly hidden in challenging environments with smoke, fog or in the dark is a complex task for the dismounted soldier in tactical operations as well as for firefighters in hazardous, urgency situations. Miniaturization has made more and more computer vision applications on lightweight, wearable devices possible. With the advent of smartglasses, these systems may be operated in a hands-free manner. This opens the way for a whole new series of use cases in operational scenarios.">
+    <meta name="keywords" content="blog,developer,personal">
+
+    
+
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Person detection in challenging conditions: combining RGB and thermal imaging on wearable devices"/>
+<meta name="twitter:description" content="Detecting persons possibly hidden in challenging environments with smoke, fog or in the dark is a complex task for the dismounted soldier in tactical operations as well as for firefighters in hazardous, urgency situations. Miniaturization has made more and more computer vision applications on lightweight, wearable devices possible. With the advent of smartglasses, these systems may be operated in a hands-free manner. This opens the way for a whole new series of use cases in operational scenarios."/>
+
+    <meta property="og:title" content="Person detection in challenging conditions: combining RGB and thermal imaging on wearable devices" />
+<meta property="og:description" content="Detecting persons possibly hidden in challenging environments with smoke, fog or in the dark is a complex task for the dismounted soldier in tactical operations as well as for firefighters in hazardous, urgency situations. Miniaturization has made more and more computer vision applications on lightweight, wearable devices possible. With the advent of smartglasses, these systems may be operated in a hands-free manner. This opens the way for a whole new series of use cases in operational scenarios." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://michiel-vlaminck.github.io/theses/person-detection/" />
+<meta property="article:published_time" content="2020-09-21T00:00:00+00:00" />
+<meta property="article:modified_time" content="2020-09-21T00:00:00+00:00" />
+
+
+    
+      <base href="https://michiel-vlaminck.github.io/theses/person-detection/">
+    
+    <title>
+  Person detection in challenging conditions: combining RGB and thermal imaging on wearable devices · Michiel Vlaminck
+</title>
+
+    
+      <link rel="canonical" href="https://michiel-vlaminck.github.io/theses/person-detection/">
+    
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700%7CMerriweather:300,700%7CSource+Code+Pro:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
+
+    
+      
+      
+      <link rel="stylesheet" href="/css/coder.min.3219ef62ae52679b7a9c19043171c3cd9f523628c2a65f3ef247ee18836bc90b.css" integrity="sha256-MhnvYq5SZ5t6nBkEMXHDzZ9SNijCpl8&#43;8kfuGINryQs=" crossorigin="anonymous" media="screen" />
+    
+
+    
+
+    
+
+    
+      <link rel="stylesheet" href="/css/custom.css" />
+    
+
+    
+
+    <link rel="icon" type="image/png" href="https://michiel-vlaminck.github.io/img/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="https://michiel-vlaminck.github.io/img/favicon-16x16.png" sizes="16x16">
+
+    <meta name="generator" content="Hugo 0.73.0" />
+  </head>
+
+  
+  
+  <body class="colorscheme-light"
+        onload=""
+  >
+    <main class="wrapper">
+      <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="/">
+      Michiel Vlaminck
+    </a>
+    
+    <input type="checkbox" id="menu-toggle" />
+    <label class="menu-button float-right" for="menu-toggle"><i class="fas fa-bars"></i></label>
+    <ul class="navigation-list">
+      
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://michiel-vlaminck.github.io/about/">About</a>
+          </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://michiel-vlaminck.github.io/projects/">Projects</a>
+          </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://michiel-vlaminck.github.io/publications/">Publications</a>
+          </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://michiel-vlaminck.github.io/teaching/">Teaching</a>
+          </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://michiel-vlaminck.github.io/theses/">Theses</a>
+          </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://michiel-vlaminck.github.io/posts/">Posts</a>
+          </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://michiel-vlaminck.github.io/contact/">Contact me</a>
+          </li>
+        
+      
+      
+    </ul>
+    
+  </section>
+</nav>
+
+
+      <div class="content">
+        
+  <section class="container page">
+  <article>
+    <header>
+      <h1>Person detection in challenging conditions: combining RGB and thermal imaging on wearable devices</h1>
+    </header>
+
+    <p>Detecting persons possibly hidden in challenging environments with smoke, fog or in the dark is a complex task for the dismounted soldier in tactical  operations as well as for firefighters in hazardous, urgency situations. Miniaturization has made more and more computer vision applications on lightweight, wearable devices possible. With the advent of smartglasses, these systems may be operated in a hands-free manner. This opens the way for a whole new series of use cases in operational scenarios.  Nowadays,  thermal cameras with a small form factor and low power requirements such as the FLIR One are easily found on the market. However, such cameras typically have a small resolution. As a consequence, they are often coupled with standard RGB cameras to capture high-resolution information in the visible spectrum. Fusion of RGB and thermal sensors is an active field of research [Sun et al. 2019, Almasri et al. 2018].</p>
+<p>Deep learning is now the standard set of methods for most computer vision applications, including generic object detection and scene segmentation. New techniques show great results [Redmon et al. 2018, Liu et al. 2016], though sometimes at the expense of heavy computational needs. Adding an RGB-thermal sensor fusion method will only increase this computational requirement. New strategies must be elaborated to run RGB-thermal person detection efficiently on wearable devices such as smartphones or smartglasses.</p>
+<h3 id="references">References</h3>
+<ul>
+<li>
+<p>F. Almasri and O. Debeir, &ldquo;RGB Guided Thermal Super-Resolution Enhancement,&rdquo; 2018 4th International Conference on Cloud Computing Technologies and Applications (Cloudtech), Brussels, Belgium, 2018, pp. 1-5.</p>
+</li>
+<li>
+<p>J. Redmon, and A. Farhadi. &ldquo;Yolov3: An incremental improvement. arXiv 2018.&rdquo; arXiv preprint arXiv:1804.02767 (2019).</p>
+</li>
+<li>
+<p>Y. Sun, W. Zuo and M. Liu, &ldquo;RTFNet: RGB-Thermal Fusion Network for Semantic Segmentation of Urban Scenes,&rdquo; in IEEE Robotics and Automation Letters, vol. 4, no. 3, pp. 2576-2583, July 2019.</p>
+</li>
+<li>
+<p>W. Liu et al. &ldquo;Ssd: Single shot multibox detector.&rdquo; European conference on computer vision. Springer, Cham, 2016.</p>
+</li>
+</ul>
+
+  </article>
+</section>
+
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script type="text/javascript" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/startup.js" id="MathJax-script"></script>
+  <script>
+    MathJax = {
+      tex: {
+        inlineMath: [
+          ['$', '$'], ['\\(', '\\)']
+        ],
+        processEscapes: true,
+        processEnvironments: true
+      },
+      options: {
+        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+      }
+    };
+  </script>
+
+      </div>
+
+      
+  <footer class="footer">
+    <section class="container">
+      
+        <p>Computer science engineer & PhD in 3D computer vision with a strong interest in artificial intelligence and autonomous robots.</p>
+      
+      
+      
+      
+    </section>
+  </footer>
+
+    </main>
+
+    
+
+    
+
+    
+
+  </body>
+
+</html>

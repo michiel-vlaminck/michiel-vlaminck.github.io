@@ -6,10 +6,55 @@
     <description>Recent content on Michiel Vlaminck</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 04 Sep 2020 22:07:06 +0200</lastBuildDate>
+    <lastBuildDate>Mon, 21 Sep 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://michiel-vlaminck.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>AI-based anomaly detection in PV power plants based on thermal imaging</title>
+      <link>https://michiel-vlaminck.github.io/theses/pv-anomaly-detection/</link>
+      <pubDate>Mon, 21 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://michiel-vlaminck.github.io/theses/pv-anomaly-detection/</guid>
+      <description>Problem statement Photovoltaic (PV) technology is one of the key-drivers of the transition towards a fully renewable-based energy system. However, current PV power plants use complex, highly customized monitoring systems that require high maintenance costs and a lot of manual intervention. As a result, numerous PV plants today operate without monitoring. The PV industry, therefore, needs a fully automated system that is able to detect anomalies, including hotspots, potential induced defects (PIDs) or issues on bypass substrings, diodes, strings or junction boxes.</description>
+    </item>
+    
+    <item>
+      <title>Drone Imagery Anonymization using AI</title>
+      <link>https://michiel-vlaminck.github.io/theses/ai-anonymization/</link>
+      <pubDate>Mon, 21 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://michiel-vlaminck.github.io/theses/ai-anonymization/</guid>
+      <description>Problem statement The GDPR introduced new regulations on how to process and handle personal data. As such, meeting the GDPR requirements is key in selling software applications to customers. The anonymization of textual data is largely accepted as something that is possible, but this is not something that is true for images. For example sometimes a face detection algorithm fails and a face is not blurred. Further, vehicles are often recognizable not just by their number plates but also by logos or other characteristics.</description>
+    </item>
+    
+    <item>
+      <title>Multi-agent visual SLAM</title>
+      <link>https://michiel-vlaminck.github.io/theses/multi-agent-slam/</link>
+      <pubDate>Mon, 21 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://michiel-vlaminck.github.io/theses/multi-agent-slam/</guid>
+      <description>Problem statement With the ever-growing abundance of cameras in cars, smartphones and other mobile computing platforms, there has been a lot of progress in the visual flavor of Simultaneous Localization And Mapping (SLAM) [Engel et al. 2015, Mur-Artal et al. 2016]. However, these systems are often designed for single-agent scenarios. For Belgian Defence and partner institutions, extending these systems to allow multi-agent operation with limited computational power would bring a lot of value.</description>
+    </item>
+    
+    <item>
+      <title>Person detection in challenging conditions: combining RGB and thermal imaging on wearable devices</title>
+      <link>https://michiel-vlaminck.github.io/theses/person-detection/</link>
+      <pubDate>Mon, 21 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://michiel-vlaminck.github.io/theses/person-detection/</guid>
+      <description>Detecting persons possibly hidden in challenging environments with smoke, fog or in the dark is a complex task for the dismounted soldier in tactical operations as well as for firefighters in hazardous, urgency situations. Miniaturization has made more and more computer vision applications on lightweight, wearable devices possible. With the advent of smartglasses, these systems may be operated in a hands-free manner. This opens the way for a whole new series of use cases in operational scenarios.</description>
+    </item>
+    
+    <item>
+      <title>Simultaneous Localization and Mapping (SLAM) using Differentiable Programming</title>
+      <link>https://michiel-vlaminck.github.io/theses/dp-slam/</link>
+      <pubDate>Mon, 21 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://michiel-vlaminck.github.io/theses/dp-slam/</guid>
+      <description>Problem statement Simultaneous Localization and Mapping (SLAM) is a computer-vision technique that allows robots and vehicles to autonomously construct or update the map of the environment. In particular, dense visual SLAM achieves a high quality dense reconstruction, which is useful for accurate real-time tracking, 3D scene extraction and modelling. Based on a high quality SLAM, it becomes easier to develop applications for automatic robot interactions with the environment and autonomous driving.</description>
+    </item>
     
     <item>
       <title>Talk at AI4Growth Industrial AI Day</title>
@@ -17,7 +62,7 @@
       <pubDate>Fri, 04 Sep 2020 22:07:06 +0200</pubDate>
       
       <guid>https://michiel-vlaminck.github.io/posts/ai4growth/</guid>
-      <description>On September 17th I will give a yalk at the AI4Growth Industrial IA Day - as part of the ECML PKDD conference (https://ecmlpkdd2020.net/) - on the work I have been doing on aerial inspection of PV power plants.</description>
+      <description>On September 17th I will give a yalk at the AI4Growth Industrial IA Day - as part of the ECML PKDD conference - on the work I have been doing on aerial inspection of PV power plants.</description>
     </item>
     
     <item>
@@ -26,7 +71,7 @@
       <pubDate>Wed, 25 Mar 2020 18:00:00 +0200</pubDate>
       
       <guid>https://michiel-vlaminck.github.io/posts/phd-defense/</guid>
-      <description>Today I successfully defended my PhD entitled &amp;ldquo;3D mapping using active depth sensors&amp;rdquo; [link]. Due to the COVID-19 measures, I was obligated to do defense remotely, from home. Fortunately, technology didn&amp;rsquo;t let me down and everything went fine. I can call myself a doctor in computer science engineering from now on. Thanks to everyone who helped me during the past 5 years!
+      <description>Today I successfully defended my PhD entitled &amp;ldquo;3D mapping using active depth sensors&amp;rdquo; [link]. Due to the COVID-19 measures, I was obligated to do defense remotely, from home. Fortunately, technology didn&amp;rsquo;t let me down and everything went fine. I can call myself a doctor in computer science engineering from now on. Thanks to everyone who helped me during the past 6 years!
 I also owe a special word of thanks to my girlfriend, who surprised me with a self-assembled PhD hat, for which I am very grateful!</description>
     </item>
     
@@ -47,7 +92,7 @@ My work in the project consists of developing image processing techniques to det
       
       <guid>https://michiel-vlaminck.github.io/projects/comp-4-drones/</guid>
       <description>COMP4DRONES is a European project that aims to provide a framework of key technologies to facilitate safe and autonomous drones. It will ease the development of new applications and functionalities on the field of transport, construction, surveillance and inspection, logistics and agriculture. More information can be found on the project website. The project is in collaboration with the HSI team of imec and the company Airobot.
-My work in the project focuses on the use case of inspection of critical infrastructure, such as off-shore wind turbines.</description>
+My work in the project focuses on the use case of inspection of critical infrastructure, such as off-shore wind turbines or bridges, by means of hyperspectral imaging.</description>
     </item>
     
     <item>

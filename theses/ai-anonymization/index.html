@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Language" content="en">
+
+    <meta name="author" content="Michiel Vlaminck">
+    <meta name="description" content="Problem statement The GDPR introduced new regulations on how to process and handle personal data. As such, meeting the GDPR requirements is key in selling software applications to customers. The anonymization of textual data is largely accepted as something that is possible, but this is not something that is true for images. For example sometimes a face detection algorithm fails and a face is not blurred. Further, vehicles are often recognizable not just by their number plates but also by logos or other characteristics.">
+    <meta name="keywords" content="blog,developer,personal">
+
+    
+
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Drone Imagery Anonymization using AI"/>
+<meta name="twitter:description" content="Problem statement The GDPR introduced new regulations on how to process and handle personal data. As such, meeting the GDPR requirements is key in selling software applications to customers. The anonymization of textual data is largely accepted as something that is possible, but this is not something that is true for images. For example sometimes a face detection algorithm fails and a face is not blurred. Further, vehicles are often recognizable not just by their number plates but also by logos or other characteristics."/>
+
+    <meta property="og:title" content="Drone Imagery Anonymization using AI" />
+<meta property="og:description" content="Problem statement The GDPR introduced new regulations on how to process and handle personal data. As such, meeting the GDPR requirements is key in selling software applications to customers. The anonymization of textual data is largely accepted as something that is possible, but this is not something that is true for images. For example sometimes a face detection algorithm fails and a face is not blurred. Further, vehicles are often recognizable not just by their number plates but also by logos or other characteristics." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://michiel-vlaminck.github.io/theses/ai-anonymization/" />
+<meta property="article:published_time" content="2020-09-21T00:00:00+00:00" />
+<meta property="article:modified_time" content="2020-09-21T00:00:00+00:00" />
+
+
+    
+      <base href="https://michiel-vlaminck.github.io/theses/ai-anonymization/">
+    
+    <title>
+  Drone Imagery Anonymization using AI · Michiel Vlaminck
+</title>
+
+    
+      <link rel="canonical" href="https://michiel-vlaminck.github.io/theses/ai-anonymization/">
+    
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700%7CMerriweather:300,700%7CSource+Code+Pro:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
+
+    
+      
+      
+      <link rel="stylesheet" href="/css/coder.min.3219ef62ae52679b7a9c19043171c3cd9f523628c2a65f3ef247ee18836bc90b.css" integrity="sha256-MhnvYq5SZ5t6nBkEMXHDzZ9SNijCpl8&#43;8kfuGINryQs=" crossorigin="anonymous" media="screen" />
+    
+
+    
+
+    
+
+    
+      <link rel="stylesheet" href="/css/custom.css" />
+    
+
+    
+
+    <link rel="icon" type="image/png" href="https://michiel-vlaminck.github.io/img/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="https://michiel-vlaminck.github.io/img/favicon-16x16.png" sizes="16x16">
+
+    <meta name="generator" content="Hugo 0.73.0" />
+  </head>
+
+  
+  
+  <body class="colorscheme-light"
+        onload=""
+  >
+    <main class="wrapper">
+      <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="/">
+      Michiel Vlaminck
+    </a>
+    
+    <input type="checkbox" id="menu-toggle" />
+    <label class="menu-button float-right" for="menu-toggle"><i class="fas fa-bars"></i></label>
+    <ul class="navigation-list">
+      
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://michiel-vlaminck.github.io/about/">About</a>
+          </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://michiel-vlaminck.github.io/projects/">Projects</a>
+          </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://michiel-vlaminck.github.io/publications/">Publications</a>
+          </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://michiel-vlaminck.github.io/teaching/">Teaching</a>
+          </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://michiel-vlaminck.github.io/theses/">Theses</a>
+          </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://michiel-vlaminck.github.io/posts/">Posts</a>
+          </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://michiel-vlaminck.github.io/contact/">Contact me</a>
+          </li>
+        
+      
+      
+    </ul>
+    
+  </section>
+</nav>
+
+
+      <div class="content">
+        
+  <section class="container page">
+  <article>
+    <header>
+      <h1>Drone Imagery Anonymization using AI</h1>
+    </header>
+
+    <h2 id="problem-statement">Problem statement</h2>
+<p>The GDPR introduced new regulations on how to process and handle personal data. As such, meeting the GDPR requirements is key in selling software applications to customers. The anonymization of textual data is largely accepted as something that is possible, but this is not something that is true for images. For example sometimes a face detection algorithm fails and a face is not blurred. Further, vehicles are often recognizable not just by their number plates but also by logos or other characteristics. A specific research challenge with regard to drone imagery is the fact that the camera is mobile and that real-world footage often features rapid zooming in and out. In this thesis we want to mitigate these problems.</p>
+<p><img src="../../../img/theses/ai-anonymization.jpg" alt="Drone Anonymization"></p>
+<h2 id="goal">Goal</h2>
+<p>The goal of this thesis is to create a machine learning algorithm that can pseudonymize/anonymize faces and vehicles in images captured by a drone taking into account above challenges. Technologies that can be used are Python, Tensorflow, Keras and in general the Python data science and machine learning track. More specifically, this topic encompasses two potential research challenges.</p>
+<p>Detection and tracking of moving objects such as people and vehicles is challenging in the case of drone footage as camera movement can be sudden and fast and the possibility to zoom further complicates matters. The fact that no frames or edges of objects can be missed in the case of anonymization makes this a particularly challenging problem. One possibility for research could be to use motion sensors and/or drone input signals to help anticipate movement and improve tracking.</p>
+<p>An often-used technique today in pseudonymization is to replace identifiable elements rather than replace them, e.g. replace all names in documents by other names. That way an observer is unable to identify names that were accidentally missed by the algorithm. Recently, this technique has been transferred to the vision space, amongst others under the name of deep privacy whereby GAN-based techniques are used to replace real faces by artificially generated ones. Optimizing this technique for differing circumstances (cameras, angles) and drone-specific aspects such as motion and zooming already present reasonable challenges. Replacing number plates and other recognizable writing or logos on cars and vans present even more research subtopics.</p>
+<h2 id="ml6">ML6</h2>
+<p>This thesis is in collaboration with the company ML6, a fast-growing machine learning services company based in Ghent, with additional offices in Amsterdam, Berlin and London. They deliver specialized engineering, research, and consulting services to clients active in a broad range of sectors. Technical areas of expertise include machine vision, natural language processing, time series analysis and reinforcement learning.</p>
+<p><img src="../../../img/theses/ml6.png" alt="ML6"></p>
+
+  </article>
+</section>
+
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script type="text/javascript" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/startup.js" id="MathJax-script"></script>
+  <script>
+    MathJax = {
+      tex: {
+        inlineMath: [
+          ['$', '$'], ['\\(', '\\)']
+        ],
+        processEscapes: true,
+        processEnvironments: true
+      },
+      options: {
+        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+      }
+    };
+  </script>
+
+      </div>
+
+      
+  <footer class="footer">
+    <section class="container">
+      
+        <p>Computer science engineer & PhD in 3D computer vision with a strong interest in artificial intelligence and autonomous robots.</p>
+      
+      
+      
+      
+    </section>
+  </footer>
+
+    </main>
+
+    
+
+    
+
+    
+
+  </body>
+
+</html>
