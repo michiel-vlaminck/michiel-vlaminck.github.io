@@ -7,32 +7,32 @@
     <meta http-equiv="Content-Language" content="en">
 
     <meta name="author" content="Michiel Vlaminck">
-    <meta name="description" content="The goal of this project is to develop a generic interoperability framework for augmented reality applications. The platform is able to host a variety of applications in the domains of remote collaboration, engineering, smart cities, gaming, entertainment, etc. My task in the project was focused on the modelling and analysis of the environment by means of 3D reconstruction and the detection of 3D geometric primitives.">
+    <meta name="description" content="All this means that a system is needed that is able to perform 3D mapping - and thus also 3D positioning - based on sensors that are able to perceive the environment, such as cameras or depth sensors. In the scientific literature, this problem is also known as simultaneous localization and mapping or SLAM as it involves both the precise localization of the robot and the mapping of the environment at the same time.">
     <meta name="keywords" content="blog,developer,personal">
 
     
 
     <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="GIPA"/>
-<meta name="twitter:description" content="The goal of this project is to develop a generic interoperability framework for augmented reality applications. The platform is able to host a variety of applications in the domains of remote collaboration, engineering, smart cities, gaming, entertainment, etc. My task in the project was focused on the modelling and analysis of the environment by means of 3D reconstruction and the detection of 3D geometric primitives."/>
+<meta name="twitter:title" content="3D mapping using active depth sensors"/>
+<meta name="twitter:description" content="All this means that a system is needed that is able to perform 3D mapping - and thus also 3D positioning - based on sensors that are able to perceive the environment, such as cameras or depth sensors. In the scientific literature, this problem is also known as simultaneous localization and mapping or SLAM as it involves both the precise localization of the robot and the mapping of the environment at the same time."/>
 
-    <meta property="og:title" content="GIPA" />
-<meta property="og:description" content="The goal of this project is to develop a generic interoperability framework for augmented reality applications. The platform is able to host a variety of applications in the domains of remote collaboration, engineering, smart cities, gaming, entertainment, etc. My task in the project was focused on the modelling and analysis of the environment by means of 3D reconstruction and the detection of 3D geometric primitives." />
+    <meta property="og:title" content="3D mapping using active depth sensors" />
+<meta property="og:description" content="All this means that a system is needed that is able to perform 3D mapping - and thus also 3D positioning - based on sensors that are able to perceive the environment, such as cameras or depth sensors. In the scientific literature, this problem is also known as simultaneous localization and mapping or SLAM as it involves both the precise localization of the robot and the mapping of the environment at the same time." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://michiel-vlaminck.github.io/projects/gipa/" />
+<meta property="og:url" content="https://michiel-vlaminck.github.io/research/3d-mapping/" />
 <meta property="article:published_time" content="2014-01-01T00:00:00+00:00" />
 <meta property="article:modified_time" content="2014-01-01T00:00:00+00:00" />
 
 
     
-      <base href="https://michiel-vlaminck.github.io/projects/gipa/">
+      <base href="https://michiel-vlaminck.github.io/research/3d-mapping/">
     
     <title>
-  GIPA · Michiel Vlaminck
+  3D mapping using active depth sensors · Michiel Vlaminck
 </title>
 
     
-      <link rel="canonical" href="https://michiel-vlaminck.github.io/projects/gipa/">
+      <link rel="canonical" href="https://michiel-vlaminck.github.io/research/3d-mapping/">
     
 
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700%7CMerriweather:300,700%7CSource+Code+Pro:400,700&display=swap" rel="stylesheet">
@@ -116,48 +116,20 @@
 
       <div class="content">
         
-  <section class="container post">
-    <article>
-      <header>
-        <div class="post-title">
-          <h1 class="title">GIPA</h1>
-        </div>
-        <div class="post-meta">
-          <div class="date">
-            <span class="posted-on">
-              <i class="fas fa-calendar"></i>
-              <time datetime='2014-01-01T00:00:00Z'>
-                January 1, 2014
-              </time>
-            </span>
-            <span class="reading-time">
-              <i class="fas fa-clock"></i>
-              1-minute read
-            </span>
-          </div>
-          
-          
-        </div>
-      </header>
+  <section class="container page">
+  <article>
+    <header>
+      <h1>3D mapping using active depth sensors</h1>
+    </header>
 
-      <div>
-        
-        <p>The goal of this project is to develop a generic interoperability framework for augmented reality applications. The platform is able to host a variety of applications in the domains of remote collaboration, engineering, smart cities, gaming, entertainment, etc. My task in the project was focused on the modelling and analysis of the environment by means of 3D reconstruction and the detection of 3D geometric primitives.</p>
+    <p>All this means that a system is needed that is able to perform 3D mapping - and thus also 3D positioning - based on sensors that are able to perceive the environment, such as cameras or depth sensors. In the scientific literature, this problem is also known as <em>simultaneous localization and mapping</em> or SLAM as it involves both the precise localization of the robot and the mapping of the environment at the same time. Current 3D mapping solutions are either too slow or they are insufficiently accurate or robust. Moreover, they are often still relying on external positioning, which makes them unsuitable in a lot of circumstances. In this work, we invented techniques that allow to build a 3D map of the environment in real-time and solely using data captured with active depth sensors.</p>
+<p>The research contributions of this work focus on three major improvements in the domain of 3D mapping and localization. First, we developed techniques to accelerate the mapping process making it possible to reconstruct the environment in high detail in real-time. This means that the data is aggregated into a 3D map at the rate it comes in, such that it can be used by autonomous robots to navigate themselves within the environment. It also allows AR applications to use the 3D map to enrich the field of view of the user with virtual objects. Thanks to the high level of detail of the reconstructions the system can also be used for real-time inspection purposes or real-time damage assessment.</p>
+<p>Second, we focused on algorithms that improve the accuracy of mobile 3D mapping to a level above what is available in the academic literature. In addition, we developed techniques to dynamically adjust the level of detail, making it possible to tune the speed versus accuracy trade-off depending on the use case or the `circumstances&rsquo;, e.g. in case of resource-constrained operating platforms. Third, we focused on the robustness of the 3D SLAM process in order to avoid situations in which the <em>tracking</em> is lost due to failures in one of the different sub-processes. Below we explain the main research contributions of this work.</p>
 
-      </div>
+  </article>
+</section>
 
-
-      <footer>
-        
-
-
-        
-        
-        
-      </footer>
-    </article>
-
-    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
   <script type="text/javascript" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/startup.js" id="MathJax-script"></script>
   <script>
@@ -174,7 +146,6 @@
       }
     };
   </script>
-  </section>
 
       </div>
 

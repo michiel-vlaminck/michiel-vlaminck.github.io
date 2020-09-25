@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Research topics on Michiel Vlaminck</title>
+    <link>https://michiel-vlaminck.github.io/research/</link>
+    <description>Recent content in Research topics on Michiel Vlaminck</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 01 Jan 2014 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://michiel-vlaminck.github.io/research/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>3D mapping using active depth sensors</title>
+      <link>https://michiel-vlaminck.github.io/research/3d-mapping/</link>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://michiel-vlaminck.github.io/research/3d-mapping/</guid>
+      <description>All this means that a system is needed that is able to perform 3D mapping - and thus also 3D positioning - based on sensors that are able to perceive the environment, such as cameras or depth sensors. In the scientific literature, this problem is also known as simultaneous localization and mapping or SLAM as it involves both the precise localization of the robot and the mapping of the environment at the same time.</description>
+    </item>
+    
+  </channel>
+</rss>

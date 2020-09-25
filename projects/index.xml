@@ -23,10 +23,10 @@ My work in the project consists of developing image processing techniques to det
     
     <item>
       <title>COMP4DRONES</title>
-      <link>https://michiel-vlaminck.github.io/projects/comp-4-drones/</link>
+      <link>https://michiel-vlaminck.github.io/projects/comp4drones/</link>
       <pubDate>Mon, 01 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://michiel-vlaminck.github.io/projects/comp-4-drones/</guid>
+      <guid>https://michiel-vlaminck.github.io/projects/comp4drones/</guid>
       <description>COMP4DRONES is a European project that aims to provide a framework of key technologies to facilitate safe and autonomous drones. It will ease the development of new applications and functionalities on the field of transport, construction, surveillance and inspection, logistics and agriculture. More information can be found on the project website. The project is in collaboration with the HSI team of imec and the company Airobot.
 My work in the project focuses on the use case of inspection of critical infrastructure, such as off-shore wind turbines or bridges, by means of hyperspectral imaging.</description>
     </item>
@@ -37,7 +37,7 @@ My work in the project focuses on the use case of inspection of critical infrast
       <pubDate>Fri, 01 Apr 2016 00:00:00 +0000</pubDate>
       
       <guid>https://michiel-vlaminck.github.io/projects/aria/</guid>
-      <description>The ARIA project aims to restore and enhance the competitiveness of industries in Flanders by optimizing communication, support and training initiatives through the use of Augmented Reality (AR). AR superimposes an instantly adapting projection of digital information as an additional layer on top of the real world. The implementation of wearable AR — to convey instructions, guide employees and teach skills — will reduce costs in terms of time and resources, while allowing lower-trained employees to perform more complex tasks.</description>
+      <description>The ICON project Augmented Reality for Industrial Applications was the follow-up project of GIPA. This time, the goal was to develop a guidance application for maintenance tasks on complex industrial machinery. By means of proof of concept we focused on the replacement of an oil filter in a cooling container of the company Evonik in Antwerp. More specifically, we made it possible for a layman to be guided using visual cues while wearing a head mounted device.</description>
     </item>
     
     <item>
