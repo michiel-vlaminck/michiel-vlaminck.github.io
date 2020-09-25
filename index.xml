@@ -96,6 +96,15 @@ My work in the project focuses on the use case of inspection of critical infrast
     </item>
     
     <item>
+      <title>Presentation at CRV 2018</title>
+      <link>https://michiel-vlaminck.github.io/posts/presentation-crv-2018/</link>
+      <pubDate>Thu, 10 May 2018 00:00:00 +0200</pubDate>
+      
+      <guid>https://michiel-vlaminck.github.io/posts/presentation-crv-2018/</guid>
+      <description>Today I gave a presentation at the Conference on Computer and Robot Vision (CRV), in Toronto, Canada.</description>
+    </item>
+    
+    <item>
       <title>Demo at Ghent Light Festival 2018</title>
       <link>https://michiel-vlaminck.github.io/posts/light-festival-2018/</link>
       <pubDate>Wed, 31 Jan 2018 00:00:00 +0200</pubDate>
@@ -120,15 +129,6 @@ My work in the project focuses on the use case of inspection of critical infrast
       
       <guid>https://michiel-vlaminck.github.io/posts/invited-speaker-mpi/</guid>
       <description>Today I gave a presentation at the Max Planck Institute Tubingen in Germany [link]. I presented my work regarding 3D mapping using lidar scanners. I gave an overview of the SLAM problem and its main challenges: robustness, accuracy and processing speed. Regarding robustness and accuracy, I explained a better point cloud representation based on resampling and surface reconstruction. I also pointed out how it can be incorporated in an ICP-based scan matching technique and explained globally consistent mapping using loop closures.</description>
-    </item>
-    
-    <item>
-      <title>Presentation at CRV 2018</title>
-      <link>https://michiel-vlaminck.github.io/posts/presentation-crv-2018/</link>
-      <pubDate>Tue, 09 May 2017 00:00:00 +0200</pubDate>
-      
-      <guid>https://michiel-vlaminck.github.io/posts/presentation-crv-2018/</guid>
-      <description>Today I gave a presentation at the Conference on Computer and Robot Vision (CRV), in Toronto, Canada.</description>
     </item>
     
     <item>
