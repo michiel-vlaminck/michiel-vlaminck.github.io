@@ -58,12 +58,30 @@ I also owe a special word of thanks to my girlfriend, who surprised me with a se
     </item>
     
     <item>
-      <title>Invited speaker Max Planck Institute Tubingen</title>
+      <title>Invited speaker MPI Tubingen</title>
       <link>https://michiel-vlaminck.github.io/posts/invited-speaker-mpi/</link>
       <pubDate>Sun, 20 Aug 2017 00:00:00 +0200</pubDate>
       
       <guid>https://michiel-vlaminck.github.io/posts/invited-speaker-mpi/</guid>
-      <description>Today I gave a presentation at the Max Planck Institute Tubingen in Germany [link]. I presented my work regarding 3D mapping using lidar scanners. I gave an overview of the SLAM problem and its main challenges: robustness, accuracy and processing speed. Regarding robustness and accuracy, I explained a better point cloud representation based on resampling and surface reconstruction. I also pointed out how it can be incorporated in an ICP-based scan matching technique and explained globally consistent mapping using loop closures.</description>
+      <description>Today I gave a presentation at the Max Planck Institute (MPI) Tubingen in Germany [link]. I presented my work regarding 3D mapping using lidar scanners. I gave an overview of the SLAM problem and its main challenges: robustness, accuracy and processing speed. Regarding robustness and accuracy, I explained a better point cloud representation based on resampling and surface reconstruction. I also pointed out how it can be incorporated in an ICP-based scan matching technique and explained globally consistent mapping using loop closures.</description>
+    </item>
+    
+    <item>
+      <title>Presentation at SPIE 2017</title>
+      <link>https://michiel-vlaminck.github.io/posts/presentation-spie-2017/</link>
+      <pubDate>Mon, 07 Aug 2017 00:00:00 +0200</pubDate>
+      
+      <guid>https://michiel-vlaminck.github.io/posts/presentation-spie-2017/</guid>
+      <description>Today I gave a presentation at the SPIE conference in San Diego, USA.</description>
+    </item>
+    
+    <item>
+      <title>Demo at ITF 2017</title>
+      <link>https://michiel-vlaminck.github.io/posts/demo-itf-2017/</link>
+      <pubDate>Tue, 16 May 2017 00:00:00 +0200</pubDate>
+      
+      <guid>https://michiel-vlaminck.github.io/posts/demo-itf-2017/</guid>
+      <description>Today I gave a presentation at the SPIE conference in San Diego, USA.</description>
     </item>
     
     <item>
@@ -72,7 +90,7 @@ I also owe a special word of thanks to my girlfriend, who surprised me with a se
       <pubDate>Tue, 09 May 2017 00:00:00 +0200</pubDate>
       
       <guid>https://michiel-vlaminck.github.io/posts/presentation-mva-2017/</guid>
-      <description>Today I gave a presentation at the Conference on Machine Vision Applications (MVA) in Nagoya, Japan.</description>
+      <description>Today I gave a presentation at the Conference on Machine Vision Applications (MVA) in Nagoya, Japan. The paper I presented is entitled &amp;ldquo;Multi-resolution ICP for the Efficient Registration of Point clouds based Octrees&amp;rdquo;.</description>
     </item>
     
   </channel>

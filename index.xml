@@ -123,12 +123,30 @@ My work in the project focuses on the use case of inspection of critical infrast
     </item>
     
     <item>
-      <title>Invited speaker Max Planck Institute Tubingen</title>
+      <title>Invited speaker MPI Tubingen</title>
       <link>https://michiel-vlaminck.github.io/posts/invited-speaker-mpi/</link>
       <pubDate>Sun, 20 Aug 2017 00:00:00 +0200</pubDate>
       
       <guid>https://michiel-vlaminck.github.io/posts/invited-speaker-mpi/</guid>
-      <description>Today I gave a presentation at the Max Planck Institute Tubingen in Germany [link]. I presented my work regarding 3D mapping using lidar scanners. I gave an overview of the SLAM problem and its main challenges: robustness, accuracy and processing speed. Regarding robustness and accuracy, I explained a better point cloud representation based on resampling and surface reconstruction. I also pointed out how it can be incorporated in an ICP-based scan matching technique and explained globally consistent mapping using loop closures.</description>
+      <description>Today I gave a presentation at the Max Planck Institute (MPI) Tubingen in Germany [link]. I presented my work regarding 3D mapping using lidar scanners. I gave an overview of the SLAM problem and its main challenges: robustness, accuracy and processing speed. Regarding robustness and accuracy, I explained a better point cloud representation based on resampling and surface reconstruction. I also pointed out how it can be incorporated in an ICP-based scan matching technique and explained globally consistent mapping using loop closures.</description>
+    </item>
+    
+    <item>
+      <title>Presentation at SPIE 2017</title>
+      <link>https://michiel-vlaminck.github.io/posts/presentation-spie-2017/</link>
+      <pubDate>Mon, 07 Aug 2017 00:00:00 +0200</pubDate>
+      
+      <guid>https://michiel-vlaminck.github.io/posts/presentation-spie-2017/</guid>
+      <description>Today I gave a presentation at the SPIE conference in San Diego, USA.</description>
+    </item>
+    
+    <item>
+      <title>Demo at ITF 2017</title>
+      <link>https://michiel-vlaminck.github.io/posts/demo-itf-2017/</link>
+      <pubDate>Tue, 16 May 2017 00:00:00 +0200</pubDate>
+      
+      <guid>https://michiel-vlaminck.github.io/posts/demo-itf-2017/</guid>
+      <description>Today I gave a presentation at the SPIE conference in San Diego, USA.</description>
     </item>
     
     <item>
@@ -137,7 +155,7 @@ My work in the project focuses on the use case of inspection of critical infrast
       <pubDate>Tue, 09 May 2017 00:00:00 +0200</pubDate>
       
       <guid>https://michiel-vlaminck.github.io/posts/presentation-mva-2017/</guid>
-      <description>Today I gave a presentation at the Conference on Machine Vision Applications (MVA) in Nagoya, Japan.</description>
+      <description>Today I gave a presentation at the Conference on Machine Vision Applications (MVA) in Nagoya, Japan. The paper I presented is entitled &amp;ldquo;Multi-resolution ICP for the Efficient Registration of Point clouds based Octrees&amp;rdquo;.</description>
     </item>
     
     <item>
@@ -164,7 +182,7 @@ My work in the project focuses on the use case of inspection of critical infrast
       <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
       
       <guid>https://michiel-vlaminck.github.io/projects/gipa/</guid>
-      <description>The goal of this project is to develop a generic interoperability framework for augmented reality applications. The platform is able to host a variety of applications in the domains of remote collaboration, engineering, smart cities, gaming, entertainment, etc. My task in the project was focused on the modelling and analysis of the environment by means of 3D reconstruction and the detection of 3D geometric primitives.</description>
+      <description>The ICON project GIPA or Generic Interoperability Platform for Augmented reality applications took place in 2014 and 2015. The aim was to develop a generic AR platform able to serve a whole range of applications including but not limited to remote collaboration, remote expert aid, serious gaming and training, critical infrastructure management and disaster or crisis support. As an example use case, we focused on the application of &amp;lsquo;as-built-as-planned&amp;rsquo;, in which the goal is to give architects the ability to verify whether or not a construction is built according to their plans.</description>
     </item>
     
   </channel>

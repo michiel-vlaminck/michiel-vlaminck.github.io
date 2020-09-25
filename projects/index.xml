@@ -46,7 +46,7 @@ My work in the project focuses on the use case of inspection of critical infrast
       <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
       
       <guid>https://michiel-vlaminck.github.io/projects/gipa/</guid>
-      <description>The goal of this project is to develop a generic interoperability framework for augmented reality applications. The platform is able to host a variety of applications in the domains of remote collaboration, engineering, smart cities, gaming, entertainment, etc. My task in the project was focused on the modelling and analysis of the environment by means of 3D reconstruction and the detection of 3D geometric primitives.</description>
+      <description>The ICON project GIPA or Generic Interoperability Platform for Augmented reality applications took place in 2014 and 2015. The aim was to develop a generic AR platform able to serve a whole range of applications including but not limited to remote collaboration, remote expert aid, serious gaming and training, critical infrastructure management and disaster or crisis support. As an example use case, we focused on the application of &amp;lsquo;as-built-as-planned&amp;rsquo;, in which the goal is to give architects the ability to verify whether or not a construction is built according to their plans.</description>
     </item>
     
   </channel>
