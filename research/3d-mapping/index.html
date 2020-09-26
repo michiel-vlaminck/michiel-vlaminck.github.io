@@ -128,6 +128,13 @@
 <p>The research contributions of this work focus on three major improvements in the domain of 3D mapping and localization. First, we developed techniques to <strong>accelerate the mapping process</strong> making it possible to reconstruct the environment in high detail in real-time. This means that the data is aggregated into a 3D map at the rate it comes in, such that it can be used by autonomous robots to navigate themselves within the environment. It also allows AR applications to use the 3D map to enrich the field of view of the user with virtual objects. Thanks to the high level of detail of the reconstructions the system can also be used for real-time inspection purposes or real-time damage assessment.</p>
 <p>Second, we focused on algorithms that <strong>improve the accuracy of mobile 3D mapping</strong> to a level above what is available in the academic literature. In addition, we developed techniques to dynamically adjust the level of detail, making it possible to tune the speed versus accuracy trade-off depending on the use case or the `circumstances&rsquo;, e.g. in case of resource-constrained operating platforms.</p>
 <p>Third, we focused on the <strong>robustness of the 3D SLAM process</strong> in order to avoid situations in which the <em>tracking</em> is lost due to failures in one of the different sub-processes. Below we explain the main research contributions of this work.</p>
+<h2 id="liborg">Liborg</h2>
+<p>Besides the development of efficient 3D mapping algorithms, we also needed an efficient acquisition platform to easily collect data from. To that end, we started with the development of a rover that can map its environment. In a later stage, we also made it possible to perform <strong>live 3D mapping</strong> of the scene on the embedded computer of the robot, i.e. the <strong>NVIDIA Jetson TX2</strong>.</p>
+<p><img src="../../img/3d-mapping/liborg.jpg" alt="Liborg"></p>
+<p>In addition, we developed a system to transmit the reconstructed 3D model to a remote computer or server. The latter allows a number of additional applications for which the robot can be used such as live monitoring of the acquired 3D model, for instance to perform <strong>inspection or assess damages in areas that are difficult to reach</strong>. We made it possible to control the robot using a remote control and thus to define the area to be mapped.</p>
+<p>Recently, we started the development of a truly autonomous system in a way that it will be possible for the robot to perform navigation based on its own acquired 3D model. This will allow the robot to perform the entire 3D mapping of a scene without any manual intervention.</p>
+<p>The main sensor on the rover is a lidar scanner, hence the name Liborg. At a later stage we integrated a regular camera on the robot to be able to combine the 3D geometric information of the scene with visual data. To that end, a synchronisation module was developed along with calibration algorithms to relate the data of both sensors.</p>
+<p>The work on Liborg has been published and presented at an international scientific conference. The rover was also demonstrated at the <strong>international technology forum (ITF)</strong> of imec in 2017 and 2018 as well as during the anniversary exhibition of Ghent University in 2017. The development of Liborg was also highlighted in the <strong>Imec magazine</strong> of October 2018 [<a href="https://www.imec-int.com/en/imec-magazine/imec-magazine-october-2018/liborg-2-0-a-robot-for-on-the-fly-3d-mapping-of-environments">link</a>].</p>
 
   </article>
 </section>
@@ -158,6 +165,11 @@
       
         <p>Computer science engineer & PhD in 3D computer vision with a strong interest in artificial intelligence and autonomous robots.</p>
       
+      
+        ©
+        
+        2020
+         Michiel Vlaminck 
       
       
       

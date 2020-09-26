@@ -17,7 +17,7 @@
       <pubDate>Fri, 04 Sep 2020 22:07:06 +0200</pubDate>
       
       <guid>https://michiel-vlaminck.github.io/posts/ai4growth/</guid>
-      <description>On September 17th I will give a yalk at the AI4Growth Industrial IA Day - as part of the ECML PKDD conference - on the work I have been doing on aerial inspection of PV power plants.</description>
+      <description>On September 17th I will give a talk at the AI4Growth Industrial AI Day - as part of the ECML PKDD conference - on the work I have been doing on aerial inspection of PV power plants.</description>
     </item>
     
     <item>
@@ -36,7 +36,8 @@ I also owe a special word of thanks to my girlfriend, who surprised me with a se
       <pubDate>Wed, 23 May 2018 00:00:00 +0200</pubDate>
       
       <guid>https://michiel-vlaminck.github.io/posts/demo-itf-2018/</guid>
-      <description></description>
+      <description>Today and tomorrow I am staffing a demo booth at the annual imec ITF conference, held in the Queen Elisabeth conert hall. Like last year, I will demonstrate our Liborg rover that we use to perform 3D mapping.
+Compared to last year, we improved the rover by replacing the raspberry pi by an nVidia Jetson TX2. This way, the 3D mapping can be done on the rover itself instead of transmitting the data to an external server to compute the 3D model.</description>
     </item>
     
     <item>
@@ -45,7 +46,8 @@ I also owe a special word of thanks to my girlfriend, who surprised me with a se
       <pubDate>Thu, 10 May 2018 00:00:00 +0200</pubDate>
       
       <guid>https://michiel-vlaminck.github.io/posts/presentation-crv-2018/</guid>
-      <description>Today I gave a presentation at the Conference on Computer and Robot Vision (CRV), in Toronto, Canada.</description>
+      <description>Today I gave a presentation at the Conference on Computer and Robot Vision (CRV), in Toronto, Canada about my work &amp;ldquo;Surface-based GICP&amp;rdquo;, an improved way of robust point cloud registration.
+During the conference dinner in the evening, I witnessed how AI pioneer Prof. Richard Sutton has been awarded with the CAIAC Life Time Achievement Award.</description>
     </item>
     
     <item>
@@ -63,7 +65,8 @@ I also owe a special word of thanks to my girlfriend, who surprised me with a se
       <pubDate>Fri, 20 Oct 2017 00:00:00 +0200</pubDate>
       
       <guid>https://michiel-vlaminck.github.io/posts/invited-speaker-mpi/</guid>
-      <description>Today I gave a presentation at the Max Planck Institute (MPI) Tubingen in Germany [link]. I presented my work regarding 3D mapping using lidar scanners. I gave an overview of the SLAM problem and its main challenges: robustness, accuracy and processing speed. Regarding robustness and accuracy, I explained a better point cloud representation based on resampling and surface reconstruction. I also pointed out how it can be incorporated in an ICP-based scan matching technique and explained globally consistent mapping using loop closures.</description>
+      <description>This week, I am visiting the lab Autonomous Vision Group (AVG) of prof. Andreas Geiger at the Max Planck Institute (MPI) for Intelligent Systems in Tubingen, Germany [link]. Today, I presented my work on 3D mapping using lidar scanners.
+In my presentation I give an overview of the SLAM problem and its main challenges: robustness, accuracy and processing speed. Regarding robustness and accuracy, I explained a better point cloud representation based on resampling and surface reconstruction.</description>
     </item>
     
     <item>
@@ -72,7 +75,7 @@ I also owe a special word of thanks to my girlfriend, who surprised me with a se
       <pubDate>Sun, 08 Oct 2017 00:00:00 +0200</pubDate>
       
       <guid>https://michiel-vlaminck.github.io/posts/200-years-ugent/</guid>
-      <description>To celebrate its 200 year existence, UGent organized an event on October 8th, to showcase its daily activities to the general public. I gave a demonstration of the 3D mapping robot I developed during my PhD.</description>
+      <description>To celebrate its 200 year existence, UGent organized an event on October 8th, to showcase its daily activities to the general public. I gave a demonstration of Liborg, the 3D mapping rover that I developed during my PhD.</description>
     </item>
     
     <item>
@@ -90,7 +93,7 @@ I also owe a special word of thanks to my girlfriend, who surprised me with a se
       <pubDate>Tue, 16 May 2017 00:00:00 +0200</pubDate>
       
       <guid>https://michiel-vlaminck.github.io/posts/demo-itf-2017/</guid>
-      <description></description>
+      <description>Today and tomorrow I am staffing a demo booth at the annual imec ITF conference, held in the Queen Elisabeth conert hall. I will demonstrate our Liborg rover that we use to perform 3D mapping.</description>
     </item>
     
     <item>
