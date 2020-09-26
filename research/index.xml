@@ -17,7 +17,7 @@
       <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
       
       <guid>https://michiel-vlaminck.github.io/research/3d-mapping/</guid>
-      <description>All this means that a system is needed that is able to perform 3D mapping - and thus also 3D positioning - based on sensors that are able to perceive the environment, such as cameras or depth sensors. In the scientific literature, this problem is also known as simultaneous localization and mapping or SLAM as it involves both the precise localization of the robot and the mapping of the environment at the same time.</description>
+      <description>During my PhD I developed a system that is able to perform 3D mapping - and thus also 3D positioning - based on sensors that are able to perceive the environment, such as cameras or depth sensors. In the scientific literature, this problem is also known as simultaneous localization and mapping or SLAM as it involves both the precise localization of the robot and the mapping of the environment at the same time.</description>
     </item>
     
   </channel>
