@@ -36,17 +36,17 @@ I also owe a special word of thanks to my girlfriend, who surprised me with a se
       <pubDate>Wed, 24 Apr 2019 00:00:00 +0200</pubDate>
       
       <guid>https://michiel-vlaminck.github.io/posts/presentation-geography/</guid>
-      <description>Today I gave a presentation and a demo during a workshop organized by the Geography department.</description>
+      <description>Today I gave a presentation and a demo during a workshop organized by the Geography department. The workshop is part of a specialist course on 3D Modelling and acquisition.</description>
     </item>
     
     <item>
-      <title>Measurement campaign Sculpture House Gillet</title>
-      <link>https://michiel-vlaminck.github.io/posts/measurement-angleur/</link>
+      <title>Scanning Sculpture House Gillet</title>
+      <link>https://michiel-vlaminck.github.io/posts/house-gillet/</link>
       <pubDate>Tue, 19 Feb 2019 00:00:00 +0200</pubDate>
       
-      <guid>https://michiel-vlaminck.github.io/posts/measurement-angleur/</guid>
-      <description>Today we did a measurement campaign in and around the sculpture house Gillet, located in Angleur, close to Liege, in Belgium.
-The house is extraordinary as it was entirely built using shotcrete - also known as sprayed concrete - which allowed the creation of walls that are irregularly shaped, as can be seen in the figure below. As a result, the house does not meet the `Manhattan-world&amp;rsquo; assumption and lacks any kind of organization in the form of orthogonal and parallel planes.</description>
+      <guid>https://michiel-vlaminck.github.io/posts/house-gillet/</guid>
+      <description>Today we did a measurement campaign in and around the Sculpture House Gillet, located in Angleur, close to Liege, in Belgium.
+The house is extraordinary as it was entirely built using shotcrete - also known as sprayed concrete - which allowed the creation of walls that are irregularly shaped, as can be seen in Figure 1. As a result, the house does not meet the `Manhattan-world&amp;rsquo; assumption and lacks any kind of organization in the form of orthogonal and parallel planes.</description>
     </item>
     
     <item>
@@ -55,7 +55,7 @@ The house is extraordinary as it was entirely built using shotcrete - also known
       <pubDate>Fri, 21 Sep 2018 00:00:00 +0200</pubDate>
       
       <guid>https://michiel-vlaminck.github.io/posts/imec-magazine/</guid>
-      <description>The development of Liborg is highlighted in the Imec magazine of October 2018 [link].</description>
+      <description>Our development of Liborg is highlighted in the Imec magazine of October 2018 [link].</description>
     </item>
     
     <item>
@@ -84,8 +84,7 @@ During the conference dinner in the evening, I witnessed how AI pioneer Prof. Ri
       <pubDate>Mon, 11 Dec 2017 00:00:00 +0200</pubDate>
       
       <guid>https://michiel-vlaminck.github.io/posts/presentation-ic3d-2017/</guid>
-      <description>Today I gave a presentation at the Conference on Computer and Robot Vision (CRV), in Toronto, Canada about my work &amp;ldquo;Surface-based GICP&amp;rdquo;, an improved way of robust point cloud registration.
-During the conference dinner in the evening, I witnessed how AI pioneer Prof. Richard Sutton has been awarded with the CAIAC Life Time Achievement Award.</description>
+      <description>Today I gave a presentation at the International Conference on 3D Immersion (IC3D), in Brussels. I presented my paper entitled &amp;ldquo;A Markerless 3D Tracking Approach For Augmented Reality Applications&amp;rdquo;.</description>
     </item>
     
     <item>
