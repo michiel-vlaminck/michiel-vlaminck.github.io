@@ -31,6 +31,25 @@ I also owe a special word of thanks to my girlfriend, who surprised me with a se
     </item>
     
     <item>
+      <title>Presentation and demo at Geography Workshop</title>
+      <link>https://michiel-vlaminck.github.io/posts/presentation-geography/</link>
+      <pubDate>Wed, 24 Apr 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://michiel-vlaminck.github.io/posts/presentation-geography/</guid>
+      <description>Today I gave a presentation and a demo during a workshop organized by the Geography department.</description>
+    </item>
+    
+    <item>
+      <title>Measurement campaign Sculpture House Gillet</title>
+      <link>https://michiel-vlaminck.github.io/posts/measurement-angleur/</link>
+      <pubDate>Tue, 19 Feb 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://michiel-vlaminck.github.io/posts/measurement-angleur/</guid>
+      <description>Today we did a measurement campaign in and around the sculpture house Gillet, located in Angleur, close to Liege, in Belgium.
+The house is extraordinary as it was entirely built using shotcrete - also known as sprayed concrete - which allowed the creation of walls that are irregularly shaped, as can be seen in the figure below. As a result, the house does not meet the `Manhattan-world&amp;rsquo; assumption and lacks any kind of organization in the form of orthogonal and parallel planes.</description>
+    </item>
+    
+    <item>
       <title>Publication Liborg in Imec Magazine</title>
       <link>https://michiel-vlaminck.github.io/posts/imec-magazine/</link>
       <pubDate>Fri, 21 Sep 2018 00:00:00 +0200</pubDate>
@@ -113,6 +132,15 @@ In my presentation I give an overview of the SLAM problem and its main challenge
       
       <guid>https://michiel-vlaminck.github.io/posts/presentation-mva-2017/</guid>
       <description>Today I gave a presentation at the Conference on Machine Vision Applications (MVA) in Nagoya, Japan. The paper I presented is entitled &amp;ldquo;Multi-resolution ICP for the Efficient Registration of Point clouds based Octrees&amp;rdquo;.</description>
+    </item>
+    
+    <item>
+      <title>Presentation at TomTom Research Day</title>
+      <link>https://michiel-vlaminck.github.io/posts/presentation-tomtom/</link>
+      <pubDate>Mon, 12 Dec 2016 00:00:00 +0200</pubDate>
+      
+      <guid>https://michiel-vlaminck.github.io/posts/presentation-tomtom/</guid>
+      <description>Today I gave a presentation during the TomTom research day in Ghent about our work on &amp;ldquo;3D scene using lidar data&amp;rdquo;.</description>
     </item>
     
     <item>
