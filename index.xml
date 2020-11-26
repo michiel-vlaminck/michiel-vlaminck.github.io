@@ -81,8 +81,7 @@ I also owe a special word of thanks to my girlfriend, who surprised me with a se
       <pubDate>Tue, 01 Oct 2019 00:00:00 +0000</pubDate>
       
       <guid>https://michiel-vlaminck.github.io/projects/analyst-pv/</guid>
-      <description>The goal of this project is to provide tools for fault localization, power loss quantification and improved diagnostics of PV power plants. A more efficient detection, diagnosis and localization of the fault will lead to a reduced time during which the fault can impact production. More information can be found on the project website.
-My work in the project consists of developing image processing techniques to detect and classify anomalies that occur on solar panels including bypass substrings, junction box issues, diode issues, string issues and potential induced defects (PID).</description>
+      <description>The goal of this project is to provide tools for fault localization, power loss quantification and improved diagnostics of PV power plants. A more efficient detection, diagnosis and localization of the fault will lead to a reduced time during which the fault can impact production. More information can be found on the project website. The project is in close collaboration with the company Sitemark, who provided all the data used to conduct this research.</description>
     </item>
     
     <item>

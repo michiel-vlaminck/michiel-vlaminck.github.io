@@ -7,20 +7,17 @@
     <meta http-equiv="Content-Language" content="en">
 
     <meta name="author" content="Michiel Vlaminck">
-    <meta name="description" content="The goal of this project is to provide tools for fault localization, power loss quantification and improved diagnostics of PV power plants. A more efficient detection, diagnosis and localization of the fault will lead to a reduced time during which the fault can impact production. More information can be found on the project website.
-My work in the project consists of developing image processing techniques to detect and classify anomalies that occur on solar panels including bypass substrings, junction box issues, diode issues, string issues and potential induced defects (PID).">
+    <meta name="description" content="The goal of this project is to provide tools for fault localization, power loss quantification and improved diagnostics of PV power plants. A more efficient detection, diagnosis and localization of the fault will lead to a reduced time during which the fault can impact production. More information can be found on the project website. The project is in close collaboration with the company Sitemark, who provided all the data used to conduct this research.">
     <meta name="keywords" content="blog,developer,personal">
 
     
 
     <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="ANALYST PV"/>
-<meta name="twitter:description" content="The goal of this project is to provide tools for fault localization, power loss quantification and improved diagnostics of PV power plants. A more efficient detection, diagnosis and localization of the fault will lead to a reduced time during which the fault can impact production. More information can be found on the project website.
-My work in the project consists of developing image processing techniques to detect and classify anomalies that occur on solar panels including bypass substrings, junction box issues, diode issues, string issues and potential induced defects (PID)."/>
+<meta name="twitter:description" content="The goal of this project is to provide tools for fault localization, power loss quantification and improved diagnostics of PV power plants. A more efficient detection, diagnosis and localization of the fault will lead to a reduced time during which the fault can impact production. More information can be found on the project website. The project is in close collaboration with the company Sitemark, who provided all the data used to conduct this research."/>
 
     <meta property="og:title" content="ANALYST PV" />
-<meta property="og:description" content="The goal of this project is to provide tools for fault localization, power loss quantification and improved diagnostics of PV power plants. A more efficient detection, diagnosis and localization of the fault will lead to a reduced time during which the fault can impact production. More information can be found on the project website.
-My work in the project consists of developing image processing techniques to detect and classify anomalies that occur on solar panels including bypass substrings, junction box issues, diode issues, string issues and potential induced defects (PID)." />
+<meta property="og:description" content="The goal of this project is to provide tools for fault localization, power loss quantification and improved diagnostics of PV power plants. A more efficient detection, diagnosis and localization of the fault will lead to a reduced time during which the fault can impact production. More information can be found on the project website. The project is in close collaboration with the company Sitemark, who provided all the data used to conduct this research." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://michiel-vlaminck.github.io/projects/analyst-pv/" />
 <meta property="article:published_time" content="2019-10-01T00:00:00+00:00" />
@@ -135,7 +132,7 @@ My work in the project consists of developing image processing techniques to det
             </span>
             <span class="reading-time">
               <i class="fas fa-clock"></i>
-              1-minute read
+              3-minute read
             </span>
           </div>
           
@@ -145,10 +142,9 @@ My work in the project consists of developing image processing techniques to det
 
       <div>
         
-        <p>The goal of this project is to provide tools for fault localization, power loss quantification and improved diagnostics of PV power plants. A more efficient detection, diagnosis and localization of the fault will lead to a reduced time during which the fault can impact production. More information can be found on the <a href="https://www.imec-int.com/en/what-we-offer/research-portfolio/analyst-pv">project website</a>.</p>
+        <p>The goal of this project is to provide tools for <strong>fault localization</strong>, power loss quantification and improved diagnostics of <strong>PV power plants</strong>. A more efficient detection, diagnosis and localization of the fault will lead to a reduced time during which the fault can impact production. More information can be found on the <a href="https://www.imec-int.com/en/what-we-offer/research-portfolio/analyst-pv">project website</a>. The project is in close collaboration with the company <a href="https://www.sitemark.com/">Sitemark</a>, who provided all the data used to conduct this research.</p>
 <p>My work in the project consists of developing image processing techniques to detect and classify anomalies that occur on solar panels including bypass substrings, junction box issues, diode issues, string issues and potential induced defects (PID).</p>
-<p>As many of these defects provoke an increase of temperature in the respective solar panel, we integrated infrared or thermal imaging into the detection system.</p>
-<p>The workflow consists of four main steps:</p>
+<p>As many of these defects provoke an increase of temperature in the respective solar panel, we integrated infrared or thermal imaging in addition to standard RGB imaging into the detection system. The workflow can be summarized in the following four main steps:</p>
 <ol>
 <li>Registration of RGB and thermal imagery</li>
 <li>Detection of solar panels using thermal images</li>
@@ -156,10 +152,20 @@ My work in the project consists of developing image processing techniques to det
 <li>Determination of the root cause of the defects using fusion of RGB and thermal images</li>
 </ol>
 <h1 id="1-registration-of-rgb-and-thermal-imagery">1. Registration of RGB and thermal imagery</h1>
+<p>The first step in the process consists of aligning the RGB and thermal images, a procedure also known as registration. Doing so, we obtain for every spatial unit visual as well as thermal information, which can be exploited in the following steps of detecting anomalies as well as their root causes.</p>
 <p><img src="../../img/analyst-pv/thermal-rgb-registration.png" alt="RGB orthomosaic"></p>
+<p><em>Figure 1: An RGB orthophoto (left) overlaid with the thermal orthophoto (right).</em></p>
 <h1 id="2-detection-of-solar-panels-using-thermal-images">2. Detection of solar panels using thermal images</h1>
+<p>The detection of solar panels can easily be conducted using thermal images as the borders of solar panels are often colder than the panels themselves and thus appear darker in those images. We have developed two different techniques to detect solar panels in thermal images.</p>
+<p>The first technique is based on a classical machine learning approach. To that end, we first conduct a preprocessing of the images, involving a gamma correction to enhance the contrast and morphological operations to make the edges of the solar panels more salient. Next, we use thresholding and contour extraction to obtain segments of potential solar panels that we eventually evaluate for shape and size. Finally, we compute a handcrafted feature vector for the candidate panels and train a support vector machine to differentiate between true solar panels and other structures.</p>
+<p>This first technique allows us to create a large dataset of solar panels, which we use in a our second, deep learning based technique. We trained a Mask R-CNN network using images that were subjected to a contrast enhancement and a bilateral filter. The results were satisfying but not 100% perfect in complex circumstances. In the images below, three different  challenges are depicted: strong sun reflections, power lines casting shadows on the solar panels and elements with a similar structure as solar panels.</p>
 <p><img src="../../img/analyst-pv/deep-learning.png" alt="Panel detection"></p>
 <h1 id="3-detection-and-classification-of-anomalies">3. Detection and classification of anomalies</h1>
+<p>Once we know the precise location of the solar panels in the images, the anomalies can be more easily detected as the search for anomalies is restricted to the specific region of the solar panel in the thermal image.</p>
+<h1 id="4-determination-of-the-root-cause-of-the-defects">4. Determination of the root cause of the defects</h1>
+<p>The final step of the analysis is to determine the root cause of the defect. Among the possible causes for hotspots are soiling, vegetation, corrosion, shading and bird poo or other &lsquo;droppings&rsquo;. The cause can also be a mechanical problem, e.g. an issue with a diode or junction box. Below there are two examples.</p>
+<p><img src="../../img/analyst-pv/hotspot-vegetation.png" alt="Root cause of defect"></p>
+<p><img src="../../img/analyst-pv/hotspot-dropping.png" alt="Root cause of defect"></p>
 
       </div>
 
