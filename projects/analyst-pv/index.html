@@ -132,7 +132,7 @@
             </span>
             <span class="reading-time">
               <i class="fas fa-clock"></i>
-              3-minute read
+              4-minute read
             </span>
           </div>
           
@@ -150,22 +150,29 @@
 <li>Detection of solar panels using thermal images</li>
 <li>Detection and classification of anomalies using fusion of RGB and thermal images</li>
 <li>Determination of the root cause of the defects using fusion of RGB and thermal images</li>
+<li>Determination of the shading profile</li>
 </ol>
 <h1 id="1-registration-of-rgb-and-thermal-imagery">1. Registration of RGB and thermal imagery</h1>
 <p>The first step in the process consists of aligning the RGB and thermal images, a procedure also known as registration. Doing so, we obtain for every spatial unit visual as well as thermal information, which can be exploited in the following steps of detecting anomalies as well as their root causes.</p>
 <p><img src="../../img/analyst-pv/thermal-rgb-registration.png" alt="RGB orthomosaic"></p>
 <p><em>Figure 1: An RGB orthophoto (left) overlaid with the thermal orthophoto (right).</em></p>
 <h1 id="2-detection-of-solar-panels-using-thermal-images">2. Detection of solar panels using thermal images</h1>
-<p>The detection of solar panels can easily be conducted using thermal images as the borders of solar panels are often colder than the panels themselves and thus appear darker in those images. We have developed two different techniques to detect solar panels in thermal images.</p>
-<p>The first technique is based on a classical machine learning approach. To that end, we first conduct a preprocessing of the images, involving a gamma correction to enhance the contrast and morphological operations to make the edges of the solar panels more salient. Next, we use thresholding and contour extraction to obtain segments of potential solar panels that we eventually evaluate for shape and size. Finally, we compute a handcrafted feature vector for the candidate panels and train a support vector machine to differentiate between true solar panels and other structures.</p>
+<p>The detection of solar panels can easily be conducted using thermal images as the borders of solar panels are often colder than the panels themselves and thus appear darker in thermal images. We have developed two different techniques to detect solar panels in thermal images.</p>
+<p>One technique is based on a classical machine learning approach. First we conduct a preprocessing of the images, involving a gamma correction to enhance the contrast and morphological operations to make the edges of the solar panels more salient. Next, we use thresholding and contour extraction to obtain segments of potential solar panels that we eventually evaluate for shape and size. Finally, we compute a feature vector based on appearance and shape for each candidate panels and train a support vector machine to differentiate between true solar panels and other structures.</p>
 <p>This first technique allows us to create a large dataset of solar panels, which we use in a our second, deep learning based technique. We trained a Mask R-CNN network using images that were subjected to a contrast enhancement and a bilateral filter. The results were satisfying but not 100% perfect in complex circumstances. In the images below, three different  challenges are depicted: strong sun reflections, power lines casting shadows on the solar panels and elements with a similar structure as solar panels.</p>
 <p><img src="../../img/analyst-pv/deep-learning.png" alt="Panel detection"></p>
+<p>However, with the knowledge that solar panels always occur in solar panel banks or regular grids, we can infer the location of missing panels. When a &lsquo;missing&rsquo; panel is detected, we still need to verify whether it is not a real missing panel, which would be classified as an &lsquo;anomaly&rsquo;. Below an image is depicted with the output of our final algorithm.</p>
+<p><img src="../../img/analyst-pv/final-panel-detector.png" alt="Panel detection"></p>
 <h1 id="3-detection-and-classification-of-anomalies">3. Detection and classification of anomalies</h1>
-<p>Once we know the precise location of the solar panels in the images, the anomalies can be more easily detected as the search for anomalies is restricted to the specific region of the solar panel in the thermal image.</p>
+<p>Once we know the precise location of the solar panels in the images, the anomalies can be more easily detected as the search for anomalies is restricted to the specific region of the solar panel in the thermal image. Below the detection of a hotspot within a solar panels is depicted.</p>
+<p><img src="../../img/analyst-pv/hotspot.png" alt="Anomaly detection"></p>
 <h1 id="4-determination-of-the-root-cause-of-the-defects">4. Determination of the root cause of the defects</h1>
 <p>The final step of the analysis is to determine the root cause of the defect. Among the possible causes for hotspots are soiling, vegetation, corrosion, shading and bird poo or other &lsquo;droppings&rsquo;. The cause can also be a mechanical problem, e.g. an issue with a diode or junction box. Below there are two examples.</p>
 <p><img src="../../img/analyst-pv/hotspot-vegetation.png" alt="Root cause of defect"></p>
 <p><img src="../../img/analyst-pv/hotspot-dropping.png" alt="Root cause of defect"></p>
+<h1 id="5-determination-of-the-shading-profile">5. Determination of the shading profile</h1>
+<p>The final step in the pipeline is to determine the shading profile of the PV plant. By modelling which parts of the solar plant are shaded during the entire year, we can compare the true output of the respective solar bank or string with the expected power output. In case both values do not match, we can deduce that an anomaly should be present. Below is an animation of the shading profile of the power plant on top of the SB Logistics site in Oudenaarde, Belgium.</p>
+<p><img src="../../img/analyst-pv/shading-sblogistics.gif" alt="Shading profile"></p>
 
       </div>
 
@@ -210,7 +217,9 @@
       
         ©
         
-        2020
+          2020 -
+        
+        2021
          Michiel Vlaminck 
       
       
