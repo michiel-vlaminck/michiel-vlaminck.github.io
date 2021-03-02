@@ -19,9 +19,10 @@
     <meta property="og:title" content="ANALYST PV" />
 <meta property="og:description" content="The goal of this project is to provide tools for fault localization, power loss quantification and improved diagnostics of PV power plants. A more efficient detection, diagnosis and localization of the fault will lead to a reduced time during which the fault can impact production. More information can be found on the project website. The project is in close collaboration with the company Sitemark, who provided all the data used to conduct this research." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://michiel-vlaminck.github.io/projects/analyst-pv/" />
-<meta property="article:published_time" content="2019-10-01T00:00:00+00:00" />
-<meta property="article:modified_time" content="2019-10-01T00:00:00+00:00" />
+<meta property="og:url" content="https://michiel-vlaminck.github.io/projects/analyst-pv/" /><meta property="article:section" content="projects" />
+<meta property="article:published_time" content="2019-10-01T00:00:00&#43;00:00" />
+<meta property="article:modified_time" content="2019-10-01T00:00:00&#43;00:00" />
+
 
 
     
@@ -58,7 +59,7 @@
     <link rel="icon" type="image/png" href="https://michiel-vlaminck.github.io/img/favicon-32x32.png" sizes="32x32">
     <link rel="icon" type="image/png" href="https://michiel-vlaminck.github.io/img/favicon-16x16.png" sizes="16x16">
 
-    <meta name="generator" content="Hugo 0.73.0" />
+    <meta name="generator" content="Hugo 0.81.0" />
   </head>
 
   
@@ -161,18 +162,23 @@
 <p>One technique is based on a classical machine learning approach. First we conduct a preprocessing of the images, involving a gamma correction to enhance the contrast and morphological operations to make the edges of the solar panels more salient. Next, we use thresholding and contour extraction to obtain segments of potential solar panels that we eventually evaluate for shape and size. Finally, we compute a feature vector based on appearance and shape for each candidate panels and train a support vector machine to differentiate between true solar panels and other structures.</p>
 <p>This first technique allows us to create a large dataset of solar panels, which we use in a our second, deep learning based technique. We trained a Mask R-CNN network using images that were subjected to a contrast enhancement and a bilateral filter. The results were satisfying but not 100% perfect in complex circumstances. In the images below, three different  challenges are depicted: strong sun reflections, power lines casting shadows on the solar panels and elements with a similar structure as solar panels.</p>
 <p><img src="../../img/analyst-pv/deep-learning.png" alt="Panel detection"></p>
+<p><em>Figure 2: Solar panel detector using deep learning.</em></p>
 <p>However, with the knowledge that solar panels always occur in solar panel banks or regular grids, we can infer the location of missing panels. When a &lsquo;missing&rsquo; panel is detected, we still need to verify whether it is not a real missing panel, which would be classified as an &lsquo;anomaly&rsquo;. Below an image is depicted with the output of our final algorithm.</p>
 <p><img src="../../img/analyst-pv/final-panel-detector.png" alt="Panel detection"></p>
+<p><em>Figure 3: Solar panel detector after post processing using prior knowledge about the location of the solar panel arrays.</em></p>
 <h1 id="3-detection-and-classification-of-anomalies">3. Detection and classification of anomalies</h1>
 <p>Once we know the precise location of the solar panels in the images, the anomalies can be more easily detected as the search for anomalies is restricted to the specific region of the solar panel in the thermal image. Below the detection of a hotspot within a solar panels is depicted.</p>
 <p><img src="../../img/analyst-pv/hotspot.png" alt="Anomaly detection"></p>
+<p><em>Figure 4: Solar panel anomaly detected using deep learning.</em></p>
 <h1 id="4-determination-of-the-root-cause-of-the-defects">4. Determination of the root cause of the defects</h1>
 <p>The final step of the analysis is to determine the root cause of the defect. Among the possible causes for hotspots are soiling, vegetation, corrosion, shading and bird poo or other &lsquo;droppings&rsquo;. The cause can also be a mechanical problem, e.g. an issue with a diode or junction box. Below there are two examples.</p>
 <p><img src="../../img/analyst-pv/hotspot-vegetation.png" alt="Root cause of defect"></p>
 <p><img src="../../img/analyst-pv/hotspot-dropping.png" alt="Root cause of defect"></p>
+<p><em>Figure 5: Several root causes of anomalies within solar panels: vegetation (top) and an object that has been dropped (bottom).</em></p>
 <h1 id="5-determination-of-the-shading-profile">5. Determination of the shading profile</h1>
-<p>The final step in the pipeline is to determine the shading profile of the PV plant. By modelling which parts of the solar plant are shaded during the entire year, we can compare the true output of the respective solar bank or string with the expected power output. In case both values do not match, we can deduce that an anomaly should be present. Below is an animation of the shading profile of the power plant on top of the SB Logistics site in Oudenaarde, Belgium.</p>
+<p>The final step in the pipeline is to determine the shading profile of the PV plant. By modelling which parts of the solar plant are shaded during the entire year, we can compare the true output of the respective solar bank or string with the expected power output. In case both values do not match, we can deduce that an anomaly should be present. Below is an animation of the shading profile of a PV power plant.</p>
 <p><img src="../../img/analyst-pv/shading-sblogistics.gif" alt="Shading profile"></p>
+<p><em>Figure 6: Shading profile of a PV power plant.</em></p>
 
       </div>
 

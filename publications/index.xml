@@ -5,10 +5,6 @@
     <link>https://michiel-vlaminck.github.io/publications/</link>
     <description>Recent content in Publication list on Michiel Vlaminck</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    
-	<atom:link href="https://michiel-vlaminck.github.io/publications/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <language>en</language><atom:link href="https://michiel-vlaminck.github.io/publications/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

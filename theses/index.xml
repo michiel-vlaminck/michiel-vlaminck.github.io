@@ -6,11 +6,7 @@
     <description>Recent content in Master theses on Michiel Vlaminck</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 21 Sep 2020 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://michiel-vlaminck.github.io/theses/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Mon, 21 Sep 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://michiel-vlaminck.github.io/theses/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>AI-based anomaly detection in PV power plants based on thermal imaging</title>
       <link>https://michiel-vlaminck.github.io/theses/pv-anomaly-detection/</link>

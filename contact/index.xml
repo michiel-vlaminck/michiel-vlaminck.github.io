@@ -5,10 +5,6 @@
     <link>https://michiel-vlaminck.github.io/contact/</link>
     <description>Recent content in Contact on Michiel Vlaminck</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    
-	<atom:link href="https://michiel-vlaminck.github.io/contact/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <language>en</language><atom:link href="https://michiel-vlaminck.github.io/contact/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
