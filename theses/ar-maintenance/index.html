@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Language" content="en">
+
+    <meta name="author" content="Michiel Vlaminck">
+    <meta name="description" content="Problem statement CNH Industrial designs, manufactures and sells combine harvesters from Zedelgem, Belgium. A combine harvester (dutch: maaidorser) is what we call a factory on wheels. It is used to harvest grain crops, wheat, barley, rye, corn, soybeans, peas,… This is a large and complex machine with lots of moving parts. For the operator of the machine it is hard to learn every little detail of the machine.
+Goal In this thesis we want to build an app for a smartphone that would aid the operator in locating certain parts on the machine for maintenance and error-tracking.">
+    <meta name="keywords" content="blog,developer,personal">
+
+    
+
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Using augmented reality on a smartphone to aid with machine maintenance"/>
+<meta name="twitter:description" content="Problem statement CNH Industrial designs, manufactures and sells combine harvesters from Zedelgem, Belgium. A combine harvester (dutch: maaidorser) is what we call a factory on wheels. It is used to harvest grain crops, wheat, barley, rye, corn, soybeans, peas,… This is a large and complex machine with lots of moving parts. For the operator of the machine it is hard to learn every little detail of the machine.
+Goal In this thesis we want to build an app for a smartphone that would aid the operator in locating certain parts on the machine for maintenance and error-tracking."/>
+
+    <meta property="og:title" content="Using augmented reality on a smartphone to aid with machine maintenance" />
+<meta property="og:description" content="Problem statement CNH Industrial designs, manufactures and sells combine harvesters from Zedelgem, Belgium. A combine harvester (dutch: maaidorser) is what we call a factory on wheels. It is used to harvest grain crops, wheat, barley, rye, corn, soybeans, peas,… This is a large and complex machine with lots of moving parts. For the operator of the machine it is hard to learn every little detail of the machine.
+Goal In this thesis we want to build an app for a smartphone that would aid the operator in locating certain parts on the machine for maintenance and error-tracking." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://michiel-vlaminck.github.io/theses/ar-maintenance/" /><meta property="article:section" content="theses" />
+<meta property="article:published_time" content="2021-08-24T00:00:00&#43;00:00" />
+<meta property="article:modified_time" content="2021-08-24T00:00:00&#43;00:00" />
+
+
+
+    
+      <base href="https://michiel-vlaminck.github.io/theses/ar-maintenance/">
+    
+    <title>
+  Using augmented reality on a smartphone to aid with machine maintenance · Michiel Vlaminck
+</title>
+
+    
+      <link rel="canonical" href="https://michiel-vlaminck.github.io/theses/ar-maintenance/">
+    
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700%7CMerriweather:300,700%7CSource+Code+Pro:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
+
+    
+      
+      
+      <link rel="stylesheet" href="/css/coder.min.3219ef62ae52679b7a9c19043171c3cd9f523628c2a65f3ef247ee18836bc90b.css" integrity="sha256-MhnvYq5SZ5t6nBkEMXHDzZ9SNijCpl8&#43;8kfuGINryQs=" crossorigin="anonymous" media="screen" />
+    
+
+    
+
+    
+
+    
+      <link rel="stylesheet" href="/css/custom.css" />
+    
+
+    
+
+    <link rel="icon" type="image/png" href="https://michiel-vlaminck.github.io/img/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="https://michiel-vlaminck.github.io/img/favicon-16x16.png" sizes="16x16">
+
+    <meta name="generator" content="Hugo 0.81.0" />
+  </head>
+
+  
+  
+  <body class="colorscheme-light"
+        onload=""
+  >
+    <main class="wrapper">
+      <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="/">
+      Michiel Vlaminck
+    </a>
+    
+    <input type="checkbox" id="menu-toggle" />
+    <label class="menu-button float-right" for="menu-toggle"><i class="fas fa-bars"></i></label>
+    <ul class="navigation-list">
+      
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://michiel-vlaminck.github.io/about/">About</a>
+          </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://michiel-vlaminck.github.io/research/">Research</a>
+          </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://michiel-vlaminck.github.io/publications/">Publications</a>
+          </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://michiel-vlaminck.github.io/teaching/">Teaching</a>
+          </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://michiel-vlaminck.github.io/theses/">Theses</a>
+          </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://michiel-vlaminck.github.io/posts/">News</a>
+          </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://michiel-vlaminck.github.io/contact/">Contact me</a>
+          </li>
+        
+      
+      
+    </ul>
+    
+  </section>
+</nav>
+
+
+      <div class="content">
+        
+  <section class="container page">
+  <article>
+    <header>
+      <h1>Using augmented reality on a smartphone to aid with machine maintenance</h1>
+    </header>
+
+    <h2 id="problem-statement">Problem statement</h2>
+<p>CNH Industrial designs, manufactures and sells combine harvesters from Zedelgem, Belgium. A combine harvester (dutch: maaidorser) is what we call a factory on wheels. It is used to harvest grain crops, wheat, barley, rye, corn, soybeans, peas,… This is a large and complex machine with lots of moving parts. For the operator of the machine it is hard to learn every little detail of the machine.</p>
+<p><img src="../../img/theses/cnh-harvester.jpg" alt="Combine harvester"></p>
+<h2 id="goal">Goal</h2>
+<p>In this thesis we want to build an app for a smartphone that would aid the operator in locating certain parts on the machine for maintenance and error-tracking. The app would use images from the smartphone and augment the image with instructions, directions on the screen. To achieve this, a 3D model of the machine (e.g. from a 3D scan or CAD model) will need to be matched to a 3D model build on the smartphone. The challenge is to first build this model using a single camera (not a stereovision camera) as it is commonly found on smartphones. A second challenge is to make the 3D matching robust to variations in camera properties, lighting conditions, dirt levels on the machine, etc.</p>
+<p>This thesis is in close collaboration with <a href="https://cnhind-zedelgem.be/">CNH Industrial designs</a>. CNH designs, manufactures and sells combine harvesters from Zedelgem, Belgium.</p>
+<p><img src="../../img/theses/cnh-harvester-engine.jpg" alt="Combine engine"></p>
+<p>This thesis is being conducted by <strong>Hamlet Marekhashvili</strong> (<a href="mailto:Hamlet.Marekhashvili@UGent.be">Hamlet.Marekhashvili@UGent.be</a>).</p>
+
+  </article>
+</section>
+
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script type="text/javascript" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/startup.js" id="MathJax-script"></script>
+  <script>
+    MathJax = {
+      tex: {
+        inlineMath: [
+          ['$', '$'], ['\\(', '\\)']
+        ],
+        processEscapes: true,
+        processEnvironments: true
+      },
+      options: {
+        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+      }
+    };
+  </script>
+
+      </div>
+
+      
+  <footer class="footer">
+    <section class="container">
+      
+        <p>Computer science engineer & PhD in 3D computer vision with a strong interest in artificial intelligence and autonomous robots.</p>
+      
+      
+        ©
+        
+          2020 -
+        
+        2021
+         Michiel Vlaminck 
+      
+      
+      
+    </section>
+  </footer>
+
+    </main>
+
+    
+
+    
+
+    
+
+  </body>
+
+</html>

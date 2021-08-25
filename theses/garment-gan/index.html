@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Language" content="en">
+
+    <meta name="author" content="Michiel Vlaminck">
+    <meta name="description" content="Problem statement Ever wonder how you would look in a certain t-shirt or pair of shoes without having to try it on? Well, that’s the problem that garment transfer is trying to solve. Given an image of a person and piece of clothing as input, the goal is to get a photo-realistic picture of that person wearing that piece of clothing.
+Garment transfer existed as science fiction for a long time, but only recently became possible to solve with the advent of GANs.">
+    <meta name="keywords" content="blog,developer,personal">
+
+    
+
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Garment transfer using GANs"/>
+<meta name="twitter:description" content="Problem statement Ever wonder how you would look in a certain t-shirt or pair of shoes without having to try it on? Well, that’s the problem that garment transfer is trying to solve. Given an image of a person and piece of clothing as input, the goal is to get a photo-realistic picture of that person wearing that piece of clothing.
+Garment transfer existed as science fiction for a long time, but only recently became possible to solve with the advent of GANs."/>
+
+    <meta property="og:title" content="Garment transfer using GANs" />
+<meta property="og:description" content="Problem statement Ever wonder how you would look in a certain t-shirt or pair of shoes without having to try it on? Well, that’s the problem that garment transfer is trying to solve. Given an image of a person and piece of clothing as input, the goal is to get a photo-realistic picture of that person wearing that piece of clothing.
+Garment transfer existed as science fiction for a long time, but only recently became possible to solve with the advent of GANs." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://michiel-vlaminck.github.io/theses/garment-gan/" /><meta property="article:section" content="theses" />
+<meta property="article:published_time" content="2021-08-24T00:00:00&#43;00:00" />
+<meta property="article:modified_time" content="2021-08-24T00:00:00&#43;00:00" />
+
+
+
+    
+      <base href="https://michiel-vlaminck.github.io/theses/garment-gan/">
+    
+    <title>
+  Garment transfer using GANs · Michiel Vlaminck
+</title>
+
+    
+      <link rel="canonical" href="https://michiel-vlaminck.github.io/theses/garment-gan/">
+    
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700%7CMerriweather:300,700%7CSource+Code+Pro:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
+
+    
+      
+      
+      <link rel="stylesheet" href="/css/coder.min.3219ef62ae52679b7a9c19043171c3cd9f523628c2a65f3ef247ee18836bc90b.css" integrity="sha256-MhnvYq5SZ5t6nBkEMXHDzZ9SNijCpl8&#43;8kfuGINryQs=" crossorigin="anonymous" media="screen" />
+    
+
+    
+
+    
+
+    
+      <link rel="stylesheet" href="/css/custom.css" />
+    
+
+    
+
+    <link rel="icon" type="image/png" href="https://michiel-vlaminck.github.io/img/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="https://michiel-vlaminck.github.io/img/favicon-16x16.png" sizes="16x16">
+
+    <meta name="generator" content="Hugo 0.81.0" />
+  </head>
+
+  
+  
+  <body class="colorscheme-light"
+        onload=""
+  >
+    <main class="wrapper">
+      <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="/">
+      Michiel Vlaminck
+    </a>
+    
+    <input type="checkbox" id="menu-toggle" />
+    <label class="menu-button float-right" for="menu-toggle"><i class="fas fa-bars"></i></label>
+    <ul class="navigation-list">
+      
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://michiel-vlaminck.github.io/about/">About</a>
+          </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://michiel-vlaminck.github.io/research/">Research</a>
+          </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://michiel-vlaminck.github.io/publications/">Publications</a>
+          </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://michiel-vlaminck.github.io/teaching/">Teaching</a>
+          </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://michiel-vlaminck.github.io/theses/">Theses</a>
+          </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://michiel-vlaminck.github.io/posts/">News</a>
+          </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://michiel-vlaminck.github.io/contact/">Contact me</a>
+          </li>
+        
+      
+      
+    </ul>
+    
+  </section>
+</nav>
+
+
+      <div class="content">
+        
+  <section class="container page">
+  <article>
+    <header>
+      <h1>Garment transfer using GANs</h1>
+    </header>
+
+    <h2 id="problem-statement">Problem statement</h2>
+<p>Ever wonder how you would look in a certain t-shirt or pair of shoes without having to try it on? Well, that’s the problem that garment transfer is trying to solve. Given an image of a person and piece of clothing as input, the goal is to get a photo-realistic picture of that person wearing that piece of clothing.</p>
+<p>Garment transfer existed as science fiction for a long time, but only recently became possible to solve with the advent of GANs. Since, it has already evolved into a popular subtopic for research and seen a lot of progress, as can be seen on the figure below.</p>
+<p>Garment transfer comes in a variety of flavours with slight variations on the inputs (e.g. from a single image of the clothing that should be transferred, to a collection of images, to an image of another person wearing the clothes that should be transferred), but in general the problem can be divided into 2 subproblems. First the algorithm should learn to separate a person’s body (pose, shape, skin color) from their clothing. Secondly, it should generate new images of the person wearing a new clothing item. The outputs also come in different forms and range from generating a single image, to generating a full 3D clothing transfer [8] where images of different viewpoints and poses can be generated.</p>
+<p>While there is growing interest, garment transfer still faces major challenges in developing effective algorithms. These challenges are summarized below:</p>
+<ul>
+<li>Hard to obtain​ ​suitable datasets​ ​for both training and evaluation​.​ As of today, there are no easy ways to obtain a dataset for the training of garment transfer models. An ideal dataset would contain multiple images of a particular clothing item from different viewpoints, pictures of different people wearing those  clothing items and pictures of the same people wearing different clothing items.</li>
+<li>There is a large difference between the transfer or clothing with complex patterns and simple clothing such as for example a plain white t-shirt. With the transfer of complex patterns it’s hard to both match the target person&rsquo;s body shape and keep the styling intact.</li>
+<li>The diversity of problem statements for garment transfer make it hard to see the forest for the trees. Because of the slight variations in both input and output, it’s hard to unify the advancements in the field and obtain a clear view of the current state of the art.</li>
+</ul>
+<p><img src="../../img/theses/ML6-garment.png" alt="Garment transfer"></p>
+<h2 id="goal">Goal</h2>
+<p>Because garment transfer research is still in its infancy and due to the lack of consensus on how to approach the problem, it can be hard to see the forest for the trees. The goal of this thesis is twofold. First, the student should investigate different approaches and identify their advances along with an analysis and comparison of their advantages and drawbacks. Second, the student should elaborate on the best approach and invent techniques to overcome the remaining limitations.</p>
+<h2 id="ml6">ML6</h2>
+<p>This thesis is in collaboration with the company <a href="https://www.ml6.eu/">ML6</a>, a fast-growing machine learning services company based in Ghent, with additional offices in Amsterdam, Berlin and London. They deliver specialized engineering, research, and consulting services to clients active in a broad range of sectors. Technical areas of expertise include machine vision, natural language processing, time series analysis and reinforcement learning.</p>
+<p>This thesis is being conducted by <strong>Andreas Mechelinck</strong> (<a href="mailto:Andreas.Mechelinck@UGent.be">Andreas.Mechelinck@UGent.be</a>).</p>
+
+  </article>
+</section>
+
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script type="text/javascript" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/startup.js" id="MathJax-script"></script>
+  <script>
+    MathJax = {
+      tex: {
+        inlineMath: [
+          ['$', '$'], ['\\(', '\\)']
+        ],
+        processEscapes: true,
+        processEnvironments: true
+      },
+      options: {
+        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+      }
+    };
+  </script>
+
+      </div>
+
+      
+  <footer class="footer">
+    <section class="container">
+      
+        <p>Computer science engineer & PhD in 3D computer vision with a strong interest in artificial intelligence and autonomous robots.</p>
+      
+      
+        ©
+        
+          2020 -
+        
+        2021
+         Michiel Vlaminck 
+      
+      
+      
+    </section>
+  </footer>
+
+    </main>
+
+    
+
+    
+
+    
+
+  </body>
+
+</html>

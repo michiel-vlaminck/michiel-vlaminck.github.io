@@ -6,7 +6,63 @@
     <description>Recent content on Michiel Vlaminck</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 28 Oct 2020 00:00:00 +0200</lastBuildDate><atom:link href="https://michiel-vlaminck.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 24 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://michiel-vlaminck.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>An Incremental Approach for Creating Global Land Cover Maps</title>
+      <link>https://michiel-vlaminck.github.io/theses/land-cover-maps/</link>
+      <pubDate>Tue, 24 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://michiel-vlaminck.github.io/theses/land-cover-maps/</guid>
+      <description>Problem statement TomTom has recently created a global Land Cover (LC) map at mid-low scale by applying machine learning technologies on satellite imagery from the Sentinel 2 mission [link]. As an example, a Land Cover map of India from 2005 is shown below. To create the first version of the map, TomTom conducted a large-scale training data collection operation. The next step is to perform a fully automated and repeatable global LC mapping for small scale, in a cost-effective way.</description>
+    </item>
+    
+    <item>
+      <title>Autonomous racecar analytics using drones</title>
+      <link>https://michiel-vlaminck.github.io/theses/racecar-analytics-drones/</link>
+      <pubDate>Tue, 24 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://michiel-vlaminck.github.io/theses/racecar-analytics-drones/</guid>
+      <description>Problem statement Autonomous racecars in the formula student competition should be able to race on unknown tracks without having access to precise external navigation tools such as GPS. Therefore, the cars need to build up an internal track layout via sensing of the surrounding environment using either a camera and/or a lidar scanner. The accuracy of this technique is hard to validate since the ground truth is often not measured.</description>
+    </item>
+    
+    <item>
+      <title>Different localization flavors during autonomous racing</title>
+      <link>https://michiel-vlaminck.github.io/theses/localization-racing/</link>
+      <pubDate>Tue, 24 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://michiel-vlaminck.github.io/theses/localization-racing/</guid>
+      <description>Problem statement During autonomous racing in the formula student racing competition, at least 40m of the track in front of the car should be observed in order to provide the best possible racing lines. However, current sensing only provides 10m of accurate track layout. Therefore, most teams use their first lap to create an internal mapping that is then used for calculating the lines in the next laps. The cars should then be able to locate themselves in this internal map to have more prior knowledge of the upcoming race track.</description>
+    </item>
+    
+    <item>
+      <title>Garment transfer using GANs</title>
+      <link>https://michiel-vlaminck.github.io/theses/garment-gan/</link>
+      <pubDate>Tue, 24 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://michiel-vlaminck.github.io/theses/garment-gan/</guid>
+      <description>Problem statement Ever wonder how you would look in a certain t-shirt or pair of shoes without having to try it on? Well, that’s the problem that garment transfer is trying to solve. Given an image of a person and piece of clothing as input, the goal is to get a photo-realistic picture of that person wearing that piece of clothing.
+Garment transfer existed as science fiction for a long time, but only recently became possible to solve with the advent of GANs.</description>
+    </item>
+    
+    <item>
+      <title>Image analysis to monitor the spreading processes on a combine harvester</title>
+      <link>https://michiel-vlaminck.github.io/theses/spreading-harvester/</link>
+      <pubDate>Tue, 24 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://michiel-vlaminck.github.io/theses/spreading-harvester/</guid>
+      <description>Problem statement For many years, combine harvesters (dutch: maaidorser) are used to harvest grain crops, wheat, barley, rye, corn, soybeans, peas …. The machine cuts the crop and separates the grain kernels from the plant. The residue (e.g. straw) is in large parts of the world chopped into small parts and spread over the field. This residue subsequently acts as fertilizer for the next crop cycle. It is of paramount importance that the residue is spread evenly in order for it to degrade properly and fertilize uniformly.</description>
+    </item>
+    
+    <item>
+      <title>Using augmented reality on a smartphone to aid with machine maintenance</title>
+      <link>https://michiel-vlaminck.github.io/theses/ar-maintenance/</link>
+      <pubDate>Tue, 24 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://michiel-vlaminck.github.io/theses/ar-maintenance/</guid>
+      <description>Problem statement CNH Industrial designs, manufactures and sells combine harvesters from Zedelgem, Belgium. A combine harvester (dutch: maaidorser) is what we call a factory on wheels. It is used to harvest grain crops, wheat, barley, rye, corn, soybeans, peas,… This is a large and complex machine with lots of moving parts. For the operator of the machine it is hard to learn every little detail of the machine.
+Goal In this thesis we want to build an app for a smartphone that would aid the operator in locating certain parts on the machine for maintenance and error-tracking.</description>
+    </item>
+    
     <item>
       <title>Paper published in Sensors journal</title>
       <link>https://michiel-vlaminck.github.io/posts/publication-solar-panels/</link>
