@@ -64,6 +64,15 @@ Goal In this thesis we want to build an app for a smartphone that would aid the 
     </item>
     
     <item>
+      <title>Virtual Reality-based annotation environment for drone images to implement 3D AI-based defect detection on digital twins</title>
+      <link>https://michiel-vlaminck.github.io/theses/defect-detection/</link>
+      <pubDate>Tue, 24 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://michiel-vlaminck.github.io/theses/defect-detection/</guid>
+      <description>Problem statement Container terminals are losing money when critical assets like container cranes experience unexpected downtime due to defects (e.g. cracks, corrosion). The cost due to operational losses and penalties if a vessel cannot unload go up to 5 Mio EUR per day. Regular inspections by experts are critical to gathering the right maintenance insights to take the needed preventive maintenance actions. Due to the limited availability of experienced inspectors worldwide, there is a high need for tools to support these inspectors and improve the inspection efficiency.</description>
+    </item>
+    
+    <item>
       <title>Paper published in Sensors journal</title>
       <link>https://michiel-vlaminck.github.io/posts/publication-solar-panels/</link>
       <pubDate>Wed, 28 Oct 2020 00:00:00 +0200</pubDate>
