@@ -73,15 +73,6 @@ Goal In this thesis we want to build an app for a smartphone that would aid the 
     </item>
     
     <item>
-      <title>Paper published in Sensors journal</title>
-      <link>https://michiel-vlaminck.github.io/posts/publication-solar-panels/</link>
-      <pubDate>Wed, 28 Oct 2020 00:00:00 +0200</pubDate>
-      
-      <guid>https://michiel-vlaminck.github.io/posts/publication-solar-panels/</guid>
-      <description>Our paper on the detection of solar panels in complex backgrounds is accepted for publication in the journal Sensors and can be accessed using this link.</description>
-    </item>
-    
-    <item>
       <title>AI-based anomaly detection in PV power plants based on thermal imaging</title>
       <link>https://michiel-vlaminck.github.io/theses/pv-anomaly-detection/</link>
       <pubDate>Mon, 21 Sep 2020 00:00:00 +0000</pubDate>
@@ -127,25 +118,6 @@ Goal In this thesis we want to build an app for a smartphone that would aid the 
     </item>
     
     <item>
-      <title>Talk at AI4Growth Industrial AI Day</title>
-      <link>https://michiel-vlaminck.github.io/posts/ai4growth/</link>
-      <pubDate>Thu, 17 Sep 2020 22:07:06 +0200</pubDate>
-      
-      <guid>https://michiel-vlaminck.github.io/posts/ai4growth/</guid>
-      <description>On September 17th I gave a talk at the AI4Growth Industrial AI Day - as part of the ECML PKDD conference - on the work I have been doing on aerial inspection of PV power plants. You can watch the recording of my talk here.</description>
-    </item>
-    
-    <item>
-      <title>Successfully defended my PhD</title>
-      <link>https://michiel-vlaminck.github.io/posts/phd-defense/</link>
-      <pubDate>Wed, 25 Mar 2020 18:00:00 +0200</pubDate>
-      
-      <guid>https://michiel-vlaminck.github.io/posts/phd-defense/</guid>
-      <description>Today I successfully defended my PhD entitled &amp;ldquo;3D mapping using active depth sensors&amp;rdquo; [link]. Due to the COVID-19 measures, I was obligated to do defense remotely, from home. Fortunately, technology didn&amp;rsquo;t let me down and everything went fine. I can call myself a doctor in computer science engineering from now on. Thanks to everyone who helped me during the past 6 years!
-I also owe a special word of thanks to my girlfriend, who surprised me with a self-assembled PhD hat, for which I am very grateful!</description>
-    </item>
-    
-    <item>
       <title>ANALYST PV</title>
       <link>https://michiel-vlaminck.github.io/projects/analyst-pv/</link>
       <pubDate>Tue, 01 Oct 2019 00:00:00 +0000</pubDate>
@@ -165,161 +137,12 @@ My work in the project focuses on the use case of inspection of critical infrast
     </item>
     
     <item>
-      <title>Presentation and demo at Geography Workshop</title>
-      <link>https://michiel-vlaminck.github.io/posts/presentation-geography/</link>
-      <pubDate>Wed, 24 Apr 2019 00:00:00 +0200</pubDate>
-      
-      <guid>https://michiel-vlaminck.github.io/posts/presentation-geography/</guid>
-      <description>Today I gave a presentation and a demo during a workshop organized by the Geography department. The workshop is part of a specialist course on 3D Modelling and acquisition.</description>
-    </item>
-    
-    <item>
-      <title>Scanning Sculpture House Gillet</title>
-      <link>https://michiel-vlaminck.github.io/posts/house-gillet/</link>
-      <pubDate>Tue, 19 Feb 2019 00:00:00 +0200</pubDate>
-      
-      <guid>https://michiel-vlaminck.github.io/posts/house-gillet/</guid>
-      <description>Today we did a measurement campaign in and around the Sculpture House Gillet, located in Angleur, close to Liege, in Belgium.
-The house is extraordinary as it was entirely built using shotcrete - also known as sprayed concrete - which allowed the creation of walls that are irregularly shaped, as can be seen in Figure 1. As a result, the house does not meet the `Manhattan-world&#39; assumption and lacks any kind of organization in the form of orthogonal and parallel planes.</description>
-    </item>
-    
-    <item>
-      <title>Publication Liborg in Imec Magazine</title>
-      <link>https://michiel-vlaminck.github.io/posts/imec-magazine/</link>
-      <pubDate>Fri, 21 Sep 2018 00:00:00 +0200</pubDate>
-      
-      <guid>https://michiel-vlaminck.github.io/posts/imec-magazine/</guid>
-      <description>Our development of Liborg is highlighted in the Imec magazine of October 2018 [link].</description>
-    </item>
-    
-    <item>
-      <title>Demo at imec ITF 2018</title>
-      <link>https://michiel-vlaminck.github.io/posts/demo-itf-2018/</link>
-      <pubDate>Wed, 23 May 2018 00:00:00 +0200</pubDate>
-      
-      <guid>https://michiel-vlaminck.github.io/posts/demo-itf-2018/</guid>
-      <description>Today and tomorrow I am staffing a demo booth at the annual imec ITF conference, held in the Queen Elisabeth conert hall. Like last year, I will demonstrate our Liborg rover that we use to perform 3D mapping.
-Compared to last year, we improved the rover by replacing the raspberry pi by an nVidia Jetson TX2. This way, the 3D mapping can be done on the rover itself instead of transmitting the data to an external server to compute the 3D model.</description>
-    </item>
-    
-    <item>
-      <title>Presentation at CRV 2018</title>
-      <link>https://michiel-vlaminck.github.io/posts/presentation-crv-2018/</link>
-      <pubDate>Thu, 10 May 2018 00:00:00 +0200</pubDate>
-      
-      <guid>https://michiel-vlaminck.github.io/posts/presentation-crv-2018/</guid>
-      <description>Today I gave a presentation at the Conference on Computer and Robot Vision (CRV), in Toronto, Canada about my work &amp;ldquo;Surface-based GICP&amp;rdquo;, an improved way of robust point cloud registration.
-During the conference dinner in the evening, I witnessed how AI pioneer Prof. Richard Sutton has been awarded with the CAIAC Life Time Achievement Award.</description>
-    </item>
-    
-    <item>
-      <title>Presentation at IC3D 2017</title>
-      <link>https://michiel-vlaminck.github.io/posts/presentation-ic3d-2017/</link>
-      <pubDate>Mon, 11 Dec 2017 00:00:00 +0200</pubDate>
-      
-      <guid>https://michiel-vlaminck.github.io/posts/presentation-ic3d-2017/</guid>
-      <description>Today I gave a presentation at the International Conference on 3D Immersion (IC3D), in Brussels. I presented my paper entitled &amp;ldquo;A Markerless 3D Tracking Approach For Augmented Reality Applications&amp;rdquo;.</description>
-    </item>
-    
-    <item>
-      <title>Invited speaker MPI Tubingen</title>
-      <link>https://michiel-vlaminck.github.io/posts/invited-speaker-mpi/</link>
-      <pubDate>Fri, 20 Oct 2017 00:00:00 +0200</pubDate>
-      
-      <guid>https://michiel-vlaminck.github.io/posts/invited-speaker-mpi/</guid>
-      <description>This week, I am visiting the lab Autonomous Vision Group (AVG) of prof. Andreas Geiger at the Max Planck Institute (MPI) for Intelligent Systems in Tubingen, Germany [link]. Today, I presented my work on 3D mapping using lidar scanners.
-In my presentation I give an overview of the SLAM problem and its main challenges: robustness, accuracy and processing speed. Regarding robustness and accuracy, I explained a better point cloud representation based on resampling and surface reconstruction.</description>
-    </item>
-    
-    <item>
-      <title>Demo at 200 years UGent celebration</title>
-      <link>https://michiel-vlaminck.github.io/posts/200-years-ugent/</link>
-      <pubDate>Sun, 08 Oct 2017 00:00:00 +0200</pubDate>
-      
-      <guid>https://michiel-vlaminck.github.io/posts/200-years-ugent/</guid>
-      <description>To celebrate its 200 year existence, UGent organized an event on October 8th, to showcase its daily activities to the general public. I gave a demonstration of Liborg, the 3D mapping rover that I developed during my PhD.</description>
-    </item>
-    
-    <item>
-      <title>Presentation at SPIE 2017</title>
-      <link>https://michiel-vlaminck.github.io/posts/presentation-spie-2017/</link>
-      <pubDate>Mon, 07 Aug 2017 00:00:00 +0200</pubDate>
-      
-      <guid>https://michiel-vlaminck.github.io/posts/presentation-spie-2017/</guid>
-      <description>Today I gave a presentation at the SPIE conference in San Diego, USA. The paper I presented is entitled &amp;ldquo;Liborg: a lidar-based Robot for Efficient 3D Mapping&amp;rdquo;.</description>
-    </item>
-    
-    <item>
-      <title>Demo at imec ITF 2017</title>
-      <link>https://michiel-vlaminck.github.io/posts/demo-itf-2017/</link>
-      <pubDate>Tue, 16 May 2017 00:00:00 +0200</pubDate>
-      
-      <guid>https://michiel-vlaminck.github.io/posts/demo-itf-2017/</guid>
-      <description>Today and tomorrow I am staffing a demo booth at the annual imec ITF conference, held in the Queen Elisabeth conert hall. I will demonstrate our Liborg rover that we use to perform 3D mapping.</description>
-    </item>
-    
-    <item>
-      <title>Presentation at MVA 2017</title>
-      <link>https://michiel-vlaminck.github.io/posts/presentation-mva-2017/</link>
-      <pubDate>Tue, 09 May 2017 00:00:00 +0200</pubDate>
-      
-      <guid>https://michiel-vlaminck.github.io/posts/presentation-mva-2017/</guid>
-      <description>Today I gave a presentation at the Conference on Machine Vision Applications (MVA) in Nagoya, Japan. The paper I presented is entitled &amp;ldquo;Multi-resolution ICP for the Efficient Registration of Point clouds based Octrees&amp;rdquo;.</description>
-    </item>
-    
-    <item>
-      <title>Presentation at TomTom Research Day</title>
-      <link>https://michiel-vlaminck.github.io/posts/presentation-tomtom/</link>
-      <pubDate>Mon, 12 Dec 2016 00:00:00 +0200</pubDate>
-      
-      <guid>https://michiel-vlaminck.github.io/posts/presentation-tomtom/</guid>
-      <description>Today I gave a presentation during the TomTom research day in Ghent about our work on &amp;ldquo;3D scene using lidar data&amp;rdquo;.</description>
-    </item>
-    
-    <item>
-      <title>Presentation at ICCE 2016</title>
-      <link>https://michiel-vlaminck.github.io/posts/presentation-icce-2016/</link>
-      <pubDate>Thu, 28 Jul 2016 00:00:00 +0200</pubDate>
-      
-      <guid>https://michiel-vlaminck.github.io/posts/presentation-icce-2016/</guid>
-      <description>Today colleague Hiep Luong gave a presentation at the International Conference on Communications and Electronics(ICCE) in Ha Long, Vietnam. He presented our paper entitled &amp;ldquo;Consistent ICP for the registration of sparse and inhomogeneous point clouds&amp;rdquo;.</description>
-    </item>
-    
-    <item>
-      <title>Presentation at IV 2016</title>
-      <link>https://michiel-vlaminck.github.io/posts/presentation-iv-2016/</link>
-      <pubDate>Tue, 21 Jun 2016 00:00:00 +0200</pubDate>
-      
-      <guid>https://michiel-vlaminck.github.io/posts/presentation-iv-2016/</guid>
-      <description>Today I gave a presentation at the Intelligent Vehicels (IV) conference in Goteborg, Sweden. The paper I presented is entitled &amp;ldquo;Towards Online Mobile Mapping Using Inhomogeneous Lidar Data&amp;rdquo;.</description>
-    </item>
-    
-    <item>
       <title>ARIA</title>
       <link>https://michiel-vlaminck.github.io/projects/aria/</link>
       <pubDate>Fri, 01 Apr 2016 00:00:00 +0000</pubDate>
       
       <guid>https://michiel-vlaminck.github.io/projects/aria/</guid>
       <description>The ICON project Augmented Reality for Industrial Applications was the follow-up project of GIPA. This time, the goal was to develop a guidance application for maintenance tasks on complex industrial machinery. By means of proof of concept we focused on the replacement of an oil filter in a cooling container of the company Evonik in Antwerp. More specifically, we made it possible for a layman to be guided using visual cues while wearing a head mounted device.</description>
-    </item>
-    
-    <item>
-      <title>Presentation at SSIAI 2016</title>
-      <link>https://michiel-vlaminck.github.io/posts/presentation-ssiai-2016/</link>
-      <pubDate>Mon, 07 Mar 2016 00:00:00 +0200</pubDate>
-      
-      <guid>https://michiel-vlaminck.github.io/posts/presentation-ssiai-2016/</guid>
-      <description>Today I gave a presentation at the Southwest Symposium on Image Analysis and Interpretation (SSIAI) in Santa Fe, USA. The paper I presented is entitled &amp;ldquo;Indoor Assistance for Visually Impaired People Using a RGB-D Camera&amp;rdquo;.</description>
-    </item>
-    
-    <item>
-      <title>Visit MICA institute Hanoi</title>
-      <link>https://michiel-vlaminck.github.io/posts/visit-mica-2015/</link>
-      <pubDate>Mon, 02 Nov 2015 00:00:00 +0200</pubDate>
-      
-      <guid>https://michiel-vlaminck.github.io/posts/visit-mica-2015/</guid>
-      <description>Together with colleague Hiep Luong, I am visiting the MICA Research Institue in Hanoi (Vietnam) during the next two weeks. We will work together on two development cooperation projects with Vietnam funded by Nafosted-FWO and VLIR-UOS about rehabilition for visually impaired people.
-The goal in those projects is to build a system to improve the mobility of visually impaired people by providing them a navigation system to easily find their way to their destination.</description>
     </item>
     
     <item>
