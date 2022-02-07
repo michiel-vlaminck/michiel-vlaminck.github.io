@@ -6,7 +6,17 @@
     <description>Recent content in Projects on Michiel Vlaminck</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 01 Oct 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://michiel-vlaminck.github.io/projects/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 01 Jan 2022 00:00:00 +0100</lastBuildDate><atom:link href="https://michiel-vlaminck.github.io/projects/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>BoB</title>
+      <link>https://michiel-vlaminck.github.io/projects/bob/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0100</pubDate>
+      
+      <guid>https://michiel-vlaminck.github.io/projects/bob/</guid>
+      <description>BoB is an imec.icon research project funded by imec and Agentschap Innoveren &amp;amp; Ondernemen (VLAIO). The project will digitize the monitoring of construction projects by connecting and enhancing Building Information Models with real-time on-site progress and activity data , analyzed with AI technology.
+Building Information Modelling (BIM) allows making elaborate, information-rich models of building designs. However, there is no easy way yet to couple these models to what is actually happening on-site, during a construction.</description>
+    </item>
+    
     <item>
       <title>ANALYST PV</title>
       <link>https://michiel-vlaminck.github.io/projects/analyst-pv/</link>
