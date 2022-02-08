@@ -7,7 +7,7 @@
     <meta http-equiv="Content-Language" content="en">
 
     <meta name="author" content="Michiel Vlaminck">
-    <meta name="description" content="3D mapping using active depth sensors During my PhD I developed a system that is able to perform 3D mapping - and thus also 3D positioning - based on sensors that are able to perceive the environment, such as lidar scanners or time of flight cameras. In the scientific literature, this problem is also known as simultaneous localization and mapping or SLAM as it involves both the precise localization of the robot and the mapping of the environment at the same time.">
+    <meta name="description" content="Michiel Vlaminck&#39;s personal website">
     <meta name="keywords" content="blog,developer,personal">
 
     
@@ -87,6 +87,10 @@
           </li>
         
           <li class="navigation-item">
+            <a class="navigation-link" href="https://michiel-vlaminck.github.io/projects/">Projects</a>
+          </li>
+        
+          <li class="navigation-item">
             <a class="navigation-link" href="https://michiel-vlaminck.github.io/publications/">Publications</a>
           </li>
         
@@ -112,58 +116,62 @@
 
       <div class="content">
         
-  <section class="container page">
-  <article>
-    <header>
-      <h1>Research topics</h1>
-    </header>
+  <section class="container list">
+    <h1 class="title"> Research topics </h1>
+    <ul>
 
-    <h3 id="3d-mapping-using-active-depth-sensors">3D mapping using active depth sensors</h3>
-<p><img src="../../img/3d-mapping/hasselt_reconstruction_banner.png" alt="3D mapping"></p>
-<p>During my PhD I developed a system that is able to perform 3D mapping - and thus also 3D positioning - based on sensors that are able to perceive the environment, such as <strong>lidar scanners</strong> or <strong>time of flight cameras</strong>. In the scientific literature, this problem is also known as simultaneous localization and mapping or <strong>SLAM</strong> as it involves both the precise localization of the robot and the mapping of the environment at the same time. My <strong>PhD dissertation</strong> can be downloaded <a href="https://telin.ugent.be/~mvlaminc/phd/dissertation_mvlaminc.pdf">here</a>.</p>
-<p><a href="./3d-mapping">Read more</a></p>
-<h1 id="projects">Projects</h1>
-<h3 id="bob">BOB</h3>
-<p><img src="../../img/bob/featured-crop.jpg" alt="BOB"></p>
-<p>BoB is an <strong>imec.icon</strong> research project funded by imec and Agentschap Innoveren &amp; Ondernemen (VLAIO). The project will digitize the <strong>monitoring of construction</strong> projects by connecting and enhancing Building Information Models (BIM) with real-time on-site progress and activity data, analyzed with AI technology.</p>
-<p><a href="../projects/bob">Read more</a></p>
-<h3 id="analyst-pv">ANALYST-PV</h3>
-<p><img src="../../img/analyst-pv/featured-crop.jpg" alt="ANALYST-PV"></p>
-<p>ANALYST PV is an <strong>imec.icon</strong> research project funded by imec, Innoviris and Agentschap Innoveren &amp; Ondernemen. The project aims at developing a fault diagnosis framework for <strong>PV power plants</strong> that relies on IoT sensors, AI-enabled root cause analysis and automatic image analysis. The ultimate goal is to optimize photovoltaic asset management and performance.</p>
-<p><a href="../projects/analyst-pv">Read more</a></p>
-<h3 id="comp4drones">COMP4DRONES</h3>
-<p><img src="../../img/comp4drones/wind-turbine-2.jpg" alt="COMP-4-DRONES"></p>
-<p>COMP4DRONES is a <strong>European project</strong> that aims to provide a framework of key technologies to facilitate safe and <strong>autonomous drones</strong>. It will ease the development of new applications and functionalities on the field of transport, construction, surveillance and inspection, logistics and agriculture. More information can be found on the project website. The project is in collaboration with the HSI team of imec and the company Airobot.</p>
-<p><a href="../projects/comp4drones">Read more</a></p>
-<h3 id="aria">ARIA</h3>
-<p><img src="../../img/aria/banner.png" alt="ARIA"></p>
-<p>The <strong>imec.icon</strong> project ARIA aims to enhance the competitiveness of industries in Flanders by optimizing communication, support and training initiatives through the use of <strong>Augmented Reality (AR)</strong>. AR superimposes an instantly adapting projection of digital information as an additional layer on top of the real world. The implementation of wearable AR — <strong>to convey instructions, guide employees and teach skills</strong> — will reduce costs in terms of time and resources, while allowing lower-trained employees to perform more complex tasks.</p>
-<p><a href="../projects/aria">Read more</a></p>
-<h3 id="gipa">GIPA</h3>
-<p><img src="../../img/gipa/banner.png" alt="GIPA"></p>
-<p>The goal of this <strong>imec.icon</strong> project is to develop a generic interoperability framework for <strong>Augmented Reality (AR)</strong> applications. The platform is able to host a variety of applications in the domains of remote collaboration, engineering, smart cities, gaming, entertainment, etc. My task in the project was focused on the modelling and analysis of the environment by means of 3D reconstruction and the detection of 3D geometric primitives.</p>
-<p><a href="../projects/gipa">Read more</a></p>
+<li>
+  <h3>UAV-based sensor fusion</h3>
 
-  </article>
-</section>
+  <div>
+    
+  
+  <img src="/research/uav-sensor-fusion/images/Bottelare-point-cloud.png" alt="UAV-based sensor fusion">
+  
+  
+  </div>
 
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-  <script type="text/javascript" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/startup.js" id="MathJax-script"></script>
-  <script>
-    MathJax = {
-      tex: {
-        inlineMath: [
-          ['$', '$'], ['\\(', '\\)']
-        ],
-        processEscapes: true,
-        processEnvironments: true
-      },
-      options: {
-        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
-      }
-    };
-  </script>
+  <br>
+
+  <div> Within the UAV research centre, we are developping a multi-modal drone rig and processing pipeline. consisting of a lidar scanner, multispectral camera, thermal camera and a high-end GNSS/INS system. It was developed to combine lidar scanning with traditional imaging (RGB, multispectral and thermal) and it will support several innovative UAV applications in the domains of precision agriculture and infrastructure inspection. </div>
+  <br>
+
+  <a href="/research/uav-sensor-fusion/">Read more</a>
+
+  <br>
+</li>
+
+
+<li>
+  <h3>Indoor 3D mapping using LIDAR</h3>
+
+  <div>
+    
+  
+  <img src="/research/3d-mapping/images/featured.png" alt="Indoor 3D mapping using LIDAR">
+  
+  
+  </div>
+
+  <br>
+
+  <div> During my PhD I developed a system that is able to perform 3D mapping - and thus also 3D positioning - based on sensors that are able to perceive the environment, such as lidar scanners or time of flight cameras. In the scientific literature, this problem is also known as simultaneous localization and mapping or SLAM as it involves both the precise localization of the robot and the mapping of the environment at the same time. </div>
+  <br>
+
+  <a href="/research/3d-mapping/">Read more</a>
+
+  <br>
+</li>
+</ul>
+
+    
+
+
+
+
+
+
+  </section>
 
       </div>
 

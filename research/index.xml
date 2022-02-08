@@ -6,11 +6,20 @@
     <description>Recent content in Research topics on Michiel Vlaminck</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 01 Jan 2014 00:00:00 +0000</lastBuildDate><atom:link href="https://michiel-vlaminck.github.io/research/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 08 Feb 2022 20:59:57 +0100</lastBuildDate><atom:link href="https://michiel-vlaminck.github.io/research/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>3D mapping using active depth sensors</title>
+      <title>UAV-based sensor fusion</title>
+      <link>https://michiel-vlaminck.github.io/research/uav-sensor-fusion/</link>
+      <pubDate>Tue, 08 Feb 2022 20:59:57 +0100</pubDate>
+      
+      <guid>https://michiel-vlaminck.github.io/research/uav-sensor-fusion/</guid>
+      <description>UAVs are often employed as measuring/monitoring device: e.g., in precision agriculture (the need for observing the inter- and intra-variability in crops) or in infrastructure inspection (the need for detecting defects such as corrosion or faults that were not built as planned). In this research, we bridge the gap between LiDAR and traditional imaging (e.g., RGB, multispectral and thermal), two complementary technologies. This combination will allow us to extract data and relate this to variables relevant for different UAV applications, where we can benefit from data coming from both the spectral as well as the 3D spatial (and even temporal) dimensions.</description>
+    </item>
+    
+    <item>
+      <title>Indoor 3D mapping using LIDAR</title>
       <link>https://michiel-vlaminck.github.io/research/3d-mapping/</link>
-      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 01 Jan 2014 20:51:06 +0100</pubDate>
       
       <guid>https://michiel-vlaminck.github.io/research/3d-mapping/</guid>
       <description>During my PhD I developed a system that is able to perform 3D mapping - and thus also 3D positioning - based on sensors that are able to perceive the environment, such as lidar scanners or time-of-flight cameras. In the scientific literature, this problem is also known as simultaneous localization and mapping or SLAM as it involves both the precise localization of the robot and the mapping of the environment at the same time.</description>

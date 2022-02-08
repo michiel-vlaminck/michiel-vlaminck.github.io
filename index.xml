@@ -6,11 +6,20 @@
     <description>Recent content on Michiel Vlaminck</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 01 Jan 2022 00:00:00 +0100</lastBuildDate><atom:link href="https://michiel-vlaminck.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 08 Feb 2022 20:59:57 +0100</lastBuildDate><atom:link href="https://michiel-vlaminck.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>BoB</title>
+      <title>UAV-based sensor fusion</title>
+      <link>https://michiel-vlaminck.github.io/research/uav-sensor-fusion/</link>
+      <pubDate>Tue, 08 Feb 2022 20:59:57 +0100</pubDate>
+      
+      <guid>https://michiel-vlaminck.github.io/research/uav-sensor-fusion/</guid>
+      <description>UAVs are often employed as measuring/monitoring device: e.g., in precision agriculture (the need for observing the inter- and intra-variability in crops) or in infrastructure inspection (the need for detecting defects such as corrosion or faults that were not built as planned). In this research, we bridge the gap between LiDAR and traditional imaging (e.g., RGB, multispectral and thermal), two complementary technologies. This combination will allow us to extract data and relate this to variables relevant for different UAV applications, where we can benefit from data coming from both the spectral as well as the 3D spatial (and even temporal) dimensions.</description>
+    </item>
+    
+    <item>
+      <title>BOB</title>
       <link>https://michiel-vlaminck.github.io/projects/bob/</link>
-      <pubDate>Sat, 01 Jan 2022 00:00:00 +0100</pubDate>
+      <pubDate>Sat, 01 Jan 2022 15:29:16 +0100</pubDate>
       
       <guid>https://michiel-vlaminck.github.io/projects/bob/</guid>
       <description>BoB is an imec.icon research project funded by imec and Agentschap Innoveren &amp;amp; Ondernemen (VLAIO). The project will digitize the monitoring of construction projects by connecting and enhancing Building Information Models with real-time on-site progress and activity data , analyzed with AI technology.
@@ -128,18 +137,9 @@ Goal In this thesis we want to build an app for a smartphone that would aid the 
     </item>
     
     <item>
-      <title>ANALYST PV</title>
-      <link>https://michiel-vlaminck.github.io/projects/analyst-pv/</link>
-      <pubDate>Tue, 01 Oct 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://michiel-vlaminck.github.io/projects/analyst-pv/</guid>
-      <description>The goal of this project is to provide tools for fault localization, power loss quantification and improved diagnostics of PV power plants. A more efficient detection, diagnosis and localization of the fault will lead to a reduced time during which the fault can impact production. More information can be found on the project website. The project is in close collaboration with the company Sitemark, who provided all the data used to conduct this research.</description>
-    </item>
-    
-    <item>
       <title>COMP4DRONES</title>
       <link>https://michiel-vlaminck.github.io/projects/comp4drones/</link>
-      <pubDate>Mon, 01 Jul 2019 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 01 Oct 2019 20:09:17 +0100</pubDate>
       
       <guid>https://michiel-vlaminck.github.io/projects/comp4drones/</guid>
       <description>COMP4DRONES is a European project that aims to provide a framework of key technologies to facilitate safe and autonomous drones. It will ease the development of new applications and functionalities on the field of transport, construction, surveillance and inspection, logistics and agriculture. More information can be found on the project website. The project is in collaboration with the HSI team of imec and the company Airobot.
@@ -147,18 +147,27 @@ My work in the project focuses on the use case of inspection of critical infrast
     </item>
     
     <item>
+      <title>ANALYST-PV</title>
+      <link>https://michiel-vlaminck.github.io/projects/analyst-pv/</link>
+      <pubDate>Tue, 01 Oct 2019 20:08:56 +0100</pubDate>
+      
+      <guid>https://michiel-vlaminck.github.io/projects/analyst-pv/</guid>
+      <description>The goal of this project is to provide tools for fault localization, power loss quantification and improved diagnostics of PV power plants. A more efficient detection, diagnosis and localization of the fault will lead to a reduced time during which the fault can impact production. More information can be found on the project website. The project is in close collaboration with the company Sitemark, who provided all the data used to conduct this research.</description>
+    </item>
+    
+    <item>
       <title>ARIA</title>
       <link>https://michiel-vlaminck.github.io/projects/aria/</link>
-      <pubDate>Fri, 01 Apr 2016 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 01 Apr 2016 20:09:07 +0100</pubDate>
       
       <guid>https://michiel-vlaminck.github.io/projects/aria/</guid>
       <description>The ICON project Augmented Reality for Industrial Applications was the follow-up project of GIPA. This time, the goal was to develop a guidance application for maintenance tasks on complex industrial machinery. By means of proof of concept we focused on the replacement of an oil filter in a cooling container of the company Evonik in Antwerp. More specifically, we made it possible for a layman to be guided using visual cues while wearing a head mounted device.</description>
     </item>
     
     <item>
-      <title>3D mapping using active depth sensors</title>
+      <title>Indoor 3D mapping using LIDAR</title>
       <link>https://michiel-vlaminck.github.io/research/3d-mapping/</link>
-      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 01 Jan 2014 20:51:06 +0100</pubDate>
       
       <guid>https://michiel-vlaminck.github.io/research/3d-mapping/</guid>
       <description>During my PhD I developed a system that is able to perform 3D mapping - and thus also 3D positioning - based on sensors that are able to perceive the environment, such as lidar scanners or time-of-flight cameras. In the scientific literature, this problem is also known as simultaneous localization and mapping or SLAM as it involves both the precise localization of the robot and the mapping of the environment at the same time.</description>
@@ -167,7 +176,7 @@ My work in the project focuses on the use case of inspection of critical infrast
     <item>
       <title>GIPA</title>
       <link>https://michiel-vlaminck.github.io/projects/gipa/</link>
-      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 01 Jan 2014 20:09:11 +0100</pubDate>
       
       <guid>https://michiel-vlaminck.github.io/projects/gipa/</guid>
       <description>The ICON project GIPA or Generic Interoperability Platform for Augmented reality applications took place in 2014 and 2015. The aim was to develop a generic AR platform able to serve a whole range of applications including but not limited to remote collaboration, remote expert aid, serious gaming and training, critical infrastructure management and disaster or crisis support. As an example use case, we focused on the application of &amp;lsquo;as-built-as-planned&amp;rsquo;, in which the goal is to give architects the ability to verify whether or not a construction is built according to their plans.</description>

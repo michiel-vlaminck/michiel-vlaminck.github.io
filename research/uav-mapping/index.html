@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Language" content="en">
+
+    <meta name="author" content="Michiel Vlaminck">
+    <meta name="description" content="Within the UAV research centre, we are developping a multi-modal drone rig and processing pipeline. consisting of a lidar scanner, multispectral camera, thermal camera and a high-end GNSS/INS system. It was developed to combine lidar scanning with traditional imaging (RGB, multispectral and thermal) and it will support several innovative UAV applications in the domains of precision agriculture and infrastructure inspection.">
+    <meta name="keywords" content="blog,developer,personal">
+
+    
+
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="UAV-based sensor fusion"/>
+<meta name="twitter:description" content="Within the UAV research centre, we are developping a multi-modal drone rig and processing pipeline. consisting of a lidar scanner, multispectral camera, thermal camera and a high-end GNSS/INS system. It was developed to combine lidar scanning with traditional imaging (RGB, multispectral and thermal) and it will support several innovative UAV applications in the domains of precision agriculture and infrastructure inspection."/>
+
+    <meta property="og:title" content="UAV-based sensor fusion" />
+<meta property="og:description" content="Within the UAV research centre, we are developping a multi-modal drone rig and processing pipeline. consisting of a lidar scanner, multispectral camera, thermal camera and a high-end GNSS/INS system. It was developed to combine lidar scanning with traditional imaging (RGB, multispectral and thermal) and it will support several innovative UAV applications in the domains of precision agriculture and infrastructure inspection." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://michiel-vlaminck.github.io/research/uav-mapping/" /><meta property="article:section" content="research" />
+<meta property="article:published_time" content="2022-02-08T20:59:57&#43;01:00" />
+<meta property="article:modified_time" content="2022-02-08T20:59:57&#43;01:00" />
+
+
+
+    
+      <base href="https://michiel-vlaminck.github.io/research/uav-mapping/">
+    
+    <title>
+  UAV-based sensor fusion · Michiel Vlaminck
+</title>
+
+    
+      <link rel="canonical" href="https://michiel-vlaminck.github.io/research/uav-mapping/">
+    
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700%7CMerriweather:300,700%7CSource+Code+Pro:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
+
+    
+      
+      
+      <link rel="stylesheet" href="/css/coder.min.3219ef62ae52679b7a9c19043171c3cd9f523628c2a65f3ef247ee18836bc90b.css" integrity="sha256-MhnvYq5SZ5t6nBkEMXHDzZ9SNijCpl8&#43;8kfuGINryQs=" crossorigin="anonymous" media="screen" />
+    
+
+    
+
+    
+
+    
+      <link rel="stylesheet" href="/css/custom.css" />
+    
+
+    
+
+    <link rel="icon" type="image/png" href="https://michiel-vlaminck.github.io/img/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="https://michiel-vlaminck.github.io/img/favicon-16x16.png" sizes="16x16">
+
+    <meta name="generator" content="Hugo 0.81.0" />
+  </head>
+
+  
+  
+  <body class="colorscheme-light"
+        onload=""
+  >
+    <main class="wrapper">
+      <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="/">
+      Michiel Vlaminck
+    </a>
+    
+    <input type="checkbox" id="menu-toggle" />
+    <label class="menu-button float-right" for="menu-toggle"><i class="fas fa-bars"></i></label>
+    <ul class="navigation-list">
+      
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://michiel-vlaminck.github.io/about/">About</a>
+          </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://michiel-vlaminck.github.io/research/">Research</a>
+          </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://michiel-vlaminck.github.io/projects/">Projects</a>
+          </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://michiel-vlaminck.github.io/publications/">Publications</a>
+          </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://michiel-vlaminck.github.io/teaching/">Teaching</a>
+          </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://michiel-vlaminck.github.io/theses/">Theses</a>
+          </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://michiel-vlaminck.github.io/contact/">Contact me</a>
+          </li>
+        
+      
+      
+    </ul>
+    
+  </section>
+</nav>
+
+
+      <div class="content">
+        
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">UAV-based sensor fusion</h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fas fa-calendar"></i>
+              <time datetime='2022-02-08T20:59:57&#43;01:00'>
+                February 8, 2022
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fas fa-clock"></i>
+              2-minute read
+            </span>
+          </div>
+          
+          
+        </div>
+      </header>
+
+      <div>
+        
+        <p>UAVs are often employed as measuring/monitoring device: e.g., in precision agriculture (the need for observing the inter- and intra-variability in crops) or in infrastructure inspection (the need for detecting defects such as corrosion or faults that were not built as planned). In this research, we bridge the gap between LiDAR and traditional imaging (e.g., RGB, multispectral and thermal), two complementary technologies. This combination will allow us to extract data and relate this to variables relevant for different UAV applications, where we can benefit from data coming from both the spectral as well as the 3D spatial (and even temporal) dimensions.</p>
+<p>The technology is a combination of a fully synchronized multimodal UAV rig and an associated sensor fusion processing pipeline that produces highly accurate, georeferenced and multispectral point clouds. From a research point of view, we developed several state-of-the-art algorithms in the field of multi-modal calibration, point cloud registration,  2D to 3D matching, depth completion, spectral and spatial corrections and optimal scanning strategies.</p>
+<p>The combination of lidar (3D spatial information) and traditional imaging (RGB, thermal, multispectral) was never used to its full potential because not all the required techniques on calibration, registration, corrections, optimal scanning strategies etc. were fully optimized. As such, the generation of multispectral point clouds remained imprecise or sub-optimal so far. In our research, we aim at making the most of technology by adopting a completely holistic approach, able to generate multispectral point clouds with unprecedented accuracy and detail.</p>
+<p><img src="../../img/uav/uav-rig.png" alt="3D mapping"></p>
+
+      </div>
+
+
+      <footer>
+        
+
+
+        
+        
+        
+      </footer>
+    </article>
+
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script type="text/javascript" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/startup.js" id="MathJax-script"></script>
+  <script>
+    MathJax = {
+      tex: {
+        inlineMath: [
+          ['$', '$'], ['\\(', '\\)']
+        ],
+        processEscapes: true,
+        processEnvironments: true
+      },
+      options: {
+        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+      }
+    };
+  </script>
+  </section>
+
+      </div>
+
+      
+  <footer class="footer">
+    <section class="container">
+      
+        <p>Computer science engineer & PhD in 3D computer vision with a strong interest in artificial intelligence and autonomous robots.</p>
+      
+      
+        ©
+        
+          2020 -
+        
+        2022
+         Michiel Vlaminck 
+      
+      
+      
+    </section>
+  </footer>
+
+    </main>
+
+    
+
+    
+
+    
+
+  </body>
+
+</html>
