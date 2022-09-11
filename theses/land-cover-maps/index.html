@@ -7,17 +7,20 @@
     <meta http-equiv="Content-Language" content="en">
 
     <meta name="author" content="Michiel Vlaminck">
-    <meta name="description" content="Problem statement TomTom has recently created a global Land Cover (LC) map at mid-low scale by applying machine learning technologies on satellite imagery from the Sentinel 2 mission [link]. As an example, a Land Cover map of India from 2005 is shown below. To create the first version of the map, TomTom conducted a large-scale training data collection operation. The next step is to perform a fully automated and repeatable global LC mapping for small scale, in a cost-effective way.">
+    <meta name="description" content="Problem statement Trees provide us with oxygen, sequestrate CO2, take up air pollutants, offer habitat for animals, alleviate the effects of urban heat islands and thus are crucial for our health and the environment. Yet, especially in urban areas, trees are continuously exposed to pollution, soil compaction, exhaust gases and physical damages. If not managed accordingly, damaged trees can cause serious accidents, damaging people and property.
+It is thus necessary to assess the tree health status of trees in the public space regularly by combining aerial imagery and ground surveys.">
     <meta name="keywords" content="blog,developer,personal">
 
     
 
     <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="An Incremental Approach for Creating Global Land Cover Maps"/>
-<meta name="twitter:description" content="Problem statement TomTom has recently created a global Land Cover (LC) map at mid-low scale by applying machine learning technologies on satellite imagery from the Sentinel 2 mission [link]. As an example, a Land Cover map of India from 2005 is shown below. To create the first version of the map, TomTom conducted a large-scale training data collection operation. The next step is to perform a fully automated and repeatable global LC mapping for small scale, in a cost-effective way."/>
+<meta name="twitter:title" content="Individual Tree Segmentation and Tree Health Analysis using Airborne Imagery"/>
+<meta name="twitter:description" content="Problem statement Trees provide us with oxygen, sequestrate CO2, take up air pollutants, offer habitat for animals, alleviate the effects of urban heat islands and thus are crucial for our health and the environment. Yet, especially in urban areas, trees are continuously exposed to pollution, soil compaction, exhaust gases and physical damages. If not managed accordingly, damaged trees can cause serious accidents, damaging people and property.
+It is thus necessary to assess the tree health status of trees in the public space regularly by combining aerial imagery and ground surveys."/>
 
-    <meta property="og:title" content="An Incremental Approach for Creating Global Land Cover Maps" />
-<meta property="og:description" content="Problem statement TomTom has recently created a global Land Cover (LC) map at mid-low scale by applying machine learning technologies on satellite imagery from the Sentinel 2 mission [link]. As an example, a Land Cover map of India from 2005 is shown below. To create the first version of the map, TomTom conducted a large-scale training data collection operation. The next step is to perform a fully automated and repeatable global LC mapping for small scale, in a cost-effective way." />
+    <meta property="og:title" content="Individual Tree Segmentation and Tree Health Analysis using Airborne Imagery" />
+<meta property="og:description" content="Problem statement Trees provide us with oxygen, sequestrate CO2, take up air pollutants, offer habitat for animals, alleviate the effects of urban heat islands and thus are crucial for our health and the environment. Yet, especially in urban areas, trees are continuously exposed to pollution, soil compaction, exhaust gases and physical damages. If not managed accordingly, damaged trees can cause serious accidents, damaging people and property.
+It is thus necessary to assess the tree health status of trees in the public space regularly by combining aerial imagery and ground surveys." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://michiel-vlaminck.github.io/theses/land-cover-maps/" /><meta property="article:section" content="theses" />
 <meta property="article:published_time" content="2021-08-24T00:00:00&#43;00:00" />
@@ -29,7 +32,7 @@
       <base href="https://michiel-vlaminck.github.io/theses/land-cover-maps/">
     
     <title>
-  An Incremental Approach for Creating Global Land Cover Maps · Michiel Vlaminck
+  Individual Tree Segmentation and Tree Health Analysis using Airborne Imagery · Michiel Vlaminck
 </title>
 
     
@@ -120,19 +123,17 @@
   <section class="container page">
   <article>
     <header>
-      <h1>An Incremental Approach for Creating Global Land Cover Maps</h1>
+      <h1>Individual Tree Segmentation and Tree Health Analysis using Airborne Imagery</h1>
     </header>
 
     <h2 id="problem-statement">Problem statement</h2>
-<p>TomTom has recently created a global Land Cover (LC) map at mid-low scale by applying machine learning technologies on satellite imagery from the Sentinel 2 mission [<a href="https://sentinel.esa.int/web/sentinel/missions/sentinel-2">link</a>]. As an example, a Land Cover map of India from 2005 is shown below. To create the first version of the map, TomTom conducted a large-scale training data collection operation. The next step is to perform a fully automated and repeatable global LC mapping for small scale, in a cost-effective way. However, the map creation process for the future versions differs from their first iteration, due to the following two reasons:</p>
-<ol>
-<li>the year-on-year Land Cover changes are relatively small in scope compared to the global scale of the map (e.g. wildfires, melting glaciers, etc) and scattered across the globe</li>
-<li>they now have two new assets (the training data as well as the predictions themselves) which they didn&rsquo;t have back then.</li>
-</ol>
-<p><img src="../../img/theses/landcover.jpg" alt="Land cover map for India"></p>
+<p>Trees provide us with oxygen, sequestrate CO2, take up air pollutants, offer habitat for animals, alleviate the effects of urban heat islands and thus are crucial for our health and the environment. Yet, especially in urban areas, trees are continuously exposed to pollution, soil compaction, exhaust gases and physical damages. If not managed accordingly, damaged trees can cause serious accidents, damaging people and property.</p>
+<p>It is thus necessary to assess the tree health status of trees in the public space regularly by combining aerial imagery and ground surveys. Currently this health assessment is done manually by an expert who looks at the imagery and assigns a health score based on his own expertise. This manual process takes a lot of time and requires hiring or having an expert within the company, so it would be beneficial to further automate this process by training efficient algorithms that can analyse trees and make health assessments based on the RGB and infrared bands of aerial imagery.</p>
+<p><img src="../../img/theses/three-health.png" alt="Aerial photo in RGB and CIR">
+<em>Figure 1: Aerial orthophoto in RGB (left) and colour-infrared (right) used to asses the three health in urban areas.</em></p>
 <h2 id="goal">Goal</h2>
-<p>The main goal of this thesis is to develop efficient algorithms that can: 1) identify the areas where the Land Cover class has potentially changed, 2) generate new predictions for the impacted areas by re-using/re-purposing the existing training data as well as the predictions. To that end, the student will have to investigate semi-supervised learning techniques to classify new land cover data as well as efficient techniques to identify changes in large image datasets.</p>
-<p>This thesis is being conducted by <strong>Thomas Xanthakis</strong> (<a href="mailto:Thomas.Xanthakis@UGent.be">Thomas.Xanthakis@UGent.be</a>).</p>
+<p>The goal of this master thesis is to develop efficient algorithms that can assess the health of trees captured on aerial imagery, and explore strategies that can further improve these algorithms. The ultimate purpose of the developed algorithms is to be able to classify detail cutouts of individual trees from colour-infrared data into five health classes, as defined by an expert at Eurosense, at a high accuracy.</p>
+<p>This thesis has been conducted by <strong>Thomas Xanthakis</strong> (<a href="mailto:Thomas.Xanthakis@UGent.be">Thomas.Xanthakis@UGent.be</a>).</p>
 
   </article>
 </section>

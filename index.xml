@@ -6,7 +6,16 @@
     <description>Recent content on Michiel Vlaminck</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 08 Feb 2022 20:59:57 +0100</lastBuildDate><atom:link href="https://michiel-vlaminck.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 19 May 2022 21:33:26 +0200</lastBuildDate><atom:link href="https://michiel-vlaminck.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Vision2Reuse</title>
+      <link>https://michiel-vlaminck.github.io/projects/vision2reuse/</link>
+      <pubDate>Thu, 19 May 2022 21:33:26 +0200</pubDate>
+      
+      <guid>https://michiel-vlaminck.github.io/projects/vision2reuse/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Sensor fusion for UAV applications</title>
       <link>https://michiel-vlaminck.github.io/research/uav-sensor-fusion/</link>
@@ -27,30 +36,21 @@ Building Information Modelling (BIM) allows making elaborate, information-rich m
     </item>
     
     <item>
-      <title>An Incremental Approach for Creating Global Land Cover Maps</title>
-      <link>https://michiel-vlaminck.github.io/theses/land-cover-maps/</link>
-      <pubDate>Tue, 24 Aug 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://michiel-vlaminck.github.io/theses/land-cover-maps/</guid>
-      <description>Problem statement TomTom has recently created a global Land Cover (LC) map at mid-low scale by applying machine learning technologies on satellite imagery from the Sentinel 2 mission [link]. As an example, a Land Cover map of India from 2005 is shown below. To create the first version of the map, TomTom conducted a large-scale training data collection operation. The next step is to perform a fully automated and repeatable global LC mapping for small scale, in a cost-effective way.</description>
-    </item>
-    
-    <item>
-      <title>Autonomous racecar analytics using drones</title>
-      <link>https://michiel-vlaminck.github.io/theses/racecar-analytics-drones/</link>
-      <pubDate>Tue, 24 Aug 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://michiel-vlaminck.github.io/theses/racecar-analytics-drones/</guid>
-      <description>Problem statement Autonomous racecars in the formula student competition should be able to race on unknown tracks without having access to precise external navigation tools such as GPS. Therefore, the cars need to build up an internal track layout via sensing of the surrounding environment using either a camera and/or a lidar scanner. The accuracy of this technique is hard to validate since the ground truth is often not measured.</description>
-    </item>
-    
-    <item>
-      <title>Different localization flavors during autonomous racing</title>
+      <title>An optimised SLAM architecture for autonomous racing on unknown race tracks</title>
       <link>https://michiel-vlaminck.github.io/theses/localization-racing/</link>
       <pubDate>Tue, 24 Aug 2021 00:00:00 +0000</pubDate>
       
       <guid>https://michiel-vlaminck.github.io/theses/localization-racing/</guid>
       <description>Problem statement During autonomous racing in the formula student racing competition, at least 40m of the track in front of the car should be observed in order to provide the best possible racing lines. However, current sensing only provides 10m of accurate track layout. Therefore, most teams use their first lap to create an internal mapping that is then used for calculating the lines in the next laps. The cars should then be able to locate themselves in this internal map to have more prior knowledge of the upcoming race track.</description>
+    </item>
+    
+    <item>
+      <title>Faster perception for autonomous race cars for race track layout mapping</title>
+      <link>https://michiel-vlaminck.github.io/theses/racecar-analytics-drones/</link>
+      <pubDate>Tue, 24 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://michiel-vlaminck.github.io/theses/racecar-analytics-drones/</guid>
+      <description>Problem statement Autonomous racecars in the formula student competition should be able to race on unknown tracks without having access to precise external navigation tools such as GPS. Therefore, the cars need to build up an internal track layout via sensing of the surrounding environment using either a camera and/or a lidar scanner. The accuracy of this technique is hard to validate since the ground truth is often not measured.</description>
     </item>
     
     <item>
@@ -70,6 +70,16 @@ Garment transfer existed as science fiction for a long time, but only recently b
       
       <guid>https://michiel-vlaminck.github.io/theses/spreading-harvester/</guid>
       <description>Problem statement For many years, combine harvesters (dutch: maaidorser) are used to harvest grain crops, wheat, barley, rye, corn, soybeans, peas …. The machine cuts the crop and separates the grain kernels from the plant. The residue (e.g. straw) is in large parts of the world chopped into small parts and spread over the field. This residue subsequently acts as fertilizer for the next crop cycle. It is of paramount importance that the residue is spread evenly in order for it to degrade properly and fertilize uniformly.</description>
+    </item>
+    
+    <item>
+      <title>Individual Tree Segmentation and Tree Health Analysis using Airborne Imagery</title>
+      <link>https://michiel-vlaminck.github.io/theses/land-cover-maps/</link>
+      <pubDate>Tue, 24 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://michiel-vlaminck.github.io/theses/land-cover-maps/</guid>
+      <description>Problem statement Trees provide us with oxygen, sequestrate CO2, take up air pollutants, offer habitat for animals, alleviate the effects of urban heat islands and thus are crucial for our health and the environment. Yet, especially in urban areas, trees are continuously exposed to pollution, soil compaction, exhaust gases and physical damages. If not managed accordingly, damaged trees can cause serious accidents, damaging people and property.
+It is thus necessary to assess the tree health status of trees in the public space regularly by combining aerial imagery and ground surveys.</description>
     </item>
     
     <item>
